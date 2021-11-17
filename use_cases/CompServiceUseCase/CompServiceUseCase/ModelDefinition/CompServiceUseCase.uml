@@ -1,0 +1,1970 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="04e25cd1-a717-4777-ac57-6ca38bb93491"
+  name="CompServiceUseCase" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="3a3d75a9-961f-43b1-9a4d-40dc20692464"
+        name="Администратор"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="895b3593-82b0-4bfd-8a7d-ad8d1183bbbe"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="958d3891-4b1a-4182-b7b8-3dbf43a325a2"
+              LastKnownName="Менеджер"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="7badfb78-e232-447b-9561-75aa2dc0a381"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Просмотр списка работников"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4bce850c-e496-4f16-a933-c5588d1b5898"
+              LastKnownName="Просмотр списка сотрудников"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca6fb7c1-b517-4a68-9f90-71bfab4b7b33"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e3cf919-ffeb-4e8e-b691-133a8d95824d"
+                  name="Просмотр списка работников"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="17f745c0-c80e-47c7-93ea-63b111b6cded"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Просмотр списка мастерских"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c73bae21-c959-4e40-877c-e4409b7a1a18"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dbd25a26-e67d-434b-a6fd-f177c3b8c345"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ed7a1df-0e68-4fc9-aa33-ee22085c7539"
+                  name="Просмотр списка мастерских"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="539dea3c-c581-4580-b08c-e120dd10d616"
+            isDerived="false"
+            sourceEndRoleName="Администратор"
+            targetEndRoleName="Просмотр мастера отчетов"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fe4ffbca-51fc-4ba1-bd37-afa07ec88f23"
+              LastKnownName="Просмотр мастера отчетов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b33bbd98-34cb-4933-8c84-79b80a5642d2"
+                  name="Администратор"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="301d84b0-7729-4455-8fc3-cb81896007b1"
+                  name="Просмотр мастера отчетов"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4bce850c-e496-4f16-a933-c5588d1b5898"
+        name="Просмотр списка сотрудников"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="25a6ba62-ed50-440c-85ab-931693bcdecb"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="8ff18a10-70cb-44d7-8bec-ec144292e2f2"
+              LastKnownName="Просмотр списка сотрудников"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d4500555-ad44-4285-9340-bb25591f18a5"
+        name="Мастер"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="321e2cc3-afd2-4c92-bbe1-53639cd39914"
+            isDerived="false"
+            sourceEndRoleName="Мастер"
+            targetEndRoleName="Просмотр списка заказов"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="980dc64a-bd02-4e73-923d-d6aeacdd6f30"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5fdcded-1b9a-428f-be4b-f3c82846b75b"
+                  name="Мастер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="28fded95-625f-47e1-8fe9-d02cab398e18"
+                  name="Просмотр списка заказов"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d9a51dfe-7bbf-4e7e-bde9-bb014ed17489"
+            isDerived="false"
+            sourceEndRoleName="Мастер"
+            targetEndRoleName="Просмотр списка услуг"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="52acb191-e134-47d0-9064-3fb7fe5f3a14"
+              LastKnownName="Просмотр списка услуг"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ac0d32e-cb2c-403f-b996-178625021497"
+                  name="Мастер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6b01a1b7-5a11-4e8d-8f6f-97f5271c130d"
+                  name="Просмотр списка услуг"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="99b3206e-0215-43ba-adc1-d87f3fc66e73"
+            isDerived="false"
+            sourceEndRoleName="Мастер"
+            targetEndRoleName="Просмотр списка техники"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5afbcba9-dae9-4844-ae54-b5ee0882ff0c"
+              LastKnownName="Просмотр списка техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d320ce4-0ff2-47ed-8751-39d8bb20f8cf"
+                  name="Мастер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="319beed8-6670-409b-a8f3-503ef463ee9c"
+                  name="Просмотр списка техники"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="236361b7-20d1-415a-bf8a-f5cda824c803"
+            isDerived="false"
+            sourceEndRoleName="Мастер"
+            targetEndRoleName="Просмотр списка задач"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="92a8827f-e444-401d-bcef-ef667a0484d1"
+              LastKnownName="Просмотр списка визитов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="344191e0-7607-482f-bcac-fe2d11fc89a9"
+                  name="Мастер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="adf7d0a5-6b61-418e-a166-0d35a94c7ff8"
+                  name="Просмотр списка задач"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="66b15dff-b978-42bf-9784-4d0124ed7dae"
+            isDerived="false"
+            sourceEndRoleName="Мастер"
+            targetEndRoleName="Просмотр списка сотрудников"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8ff18a10-70cb-44d7-8bec-ec144292e2f2"
+              LastKnownName="Просмотр списка сотрудников"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="298a4867-476e-4a1a-b2f5-ec010ca8e6cd"
+                  name="Мастер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ed93b16-b18b-40cd-bbe1-dad88db41bdd"
+                  name="Просмотр списка сотрудников"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a8eace58-de06-41e2-a492-e88cdcd05a78"
+            isDerived="false"
+            sourceEndRoleName="Мастер"
+            targetEndRoleName="Просмотр списка поставок"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fde363b4-860d-44b7-bcd3-187858802778"
+              LastKnownName="Просмотр списка поставок"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1f7875ef-ff68-4c1c-be9a-190dcc2b7a5b"
+                  name="Мастер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed7b3ce0-e736-46a5-b6cd-ccdb20ecc369"
+                  name="Просмотр списка поставок"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="95758c36-034c-4e65-a2b5-ff22369c727d"
+            isDerived="false"
+            sourceEndRoleName="Мастер"
+            targetEndRoleName="Просмотр списка деталей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7d97eca2-fad1-40bc-a43b-d0c6265cd572"
+              LastKnownName="Просмотр списка деталей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7283756a-9062-436f-aade-67c9f6946931"
+                  name="Мастер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2fa30b47-1773-47e1-8c34-3053dca1450c"
+                  name="Просмотр списка деталей"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6eee3bf2-eac5-40b9-b3a7-a0436fb81c9b"
+            isDerived="false"
+            sourceEndRoleName="Мастер"
+            targetEndRoleName="Просмотр списка мастерских"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="00cc39ea-0d4f-40d4-8d45-a5c5a5772b6b"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d2967ffe-5cbc-4abb-a888-42d2f7b0430d"
+                  name="Мастер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3313d58-ee57-4bb6-b6b4-c550e1eb88a2"
+                  name="Просмотр списка мастерских"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="980dc64a-bd02-4e73-923d-d6aeacdd6f30"
+        name="Просмотр списка заказов"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="319d5c5a-fd36-48d9-8588-96b6456d4ff8"
+        name="Просмотр конкретного заказа"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c250a797-cd78-4edf-83f9-4694c2c87015">
+            <useCaseMoniker
+              Id="980dc64a-bd02-4e73-923d-d6aeacdd6f30"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3c379341-d663-4957-ad6a-a4f116d9c964"
+        name="Изменение  заказа"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c55be54b-511e-4d07-a93b-e272298ccc7e">
+            <useCaseMoniker
+              Id="319d5c5a-fd36-48d9-8588-96b6456d4ff8"
+              LastKnownName="Просмотр конкретного заказа"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="958d3891-4b1a-4182-b7b8-3dbf43a325a2"
+        name="Менеджер"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="e9ed60d9-17e4-46d8-b05d-468128745a0f"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="d4500555-ad44-4285-9340-bb25591f18a5"
+              LastKnownName="Мастер"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="0dc1d61b-3c63-40ae-9056-00c441e822e2"
+            isDerived="false"
+            sourceEndRoleName="Менеджер"
+            targetEndRoleName="Просмотр списка клиентов"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4bd229f7-99fc-4ac2-9681-86564739d321"
+              LastKnownName="Просмотр списка клиентов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16a50461-03fb-46b4-9523-73116d452689"
+                  name="Менеджер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca3512ce-a37e-41da-91a6-d04655d2f51d"
+                  name="Просмотр списка клиентов"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e42117b5-5af2-4674-9415-5ede5e7980c3"
+            isDerived="false"
+            sourceEndRoleName="Менеджер"
+            targetEndRoleName="Просмотр списка заказов"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac3ebd00-4346-42c6-898b-0da84a492246"
+                  name="Менеджер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dd52840c-93bd-4e74-9f26-02f56447cf10"
+                  name="Просмотр списка заказов"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="91803730-3cfe-4c9f-8fe1-2eae31f74862"
+            isDerived="false"
+            sourceEndRoleName="Менеджер"
+            targetEndRoleName="Просмотр списка категорий "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
+              LastKnownName="Просмотр списка категорий "
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18c720d1-8953-4db7-ad80-a341322b1387"
+                  name="Менеджер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fef048f5-74c0-4718-9f42-c2ada9ab30a1"
+                  name="Просмотр списка категорий "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="07ce5c26-6e98-463d-aaa2-fe3552718e34"
+            isDerived="false"
+            sourceEndRoleName="Менеджер"
+            targetEndRoleName="Просмотр списка заказов"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ff49714b-6b45-4c59-8088-4f3d80e6c28f"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e5eb061-aa97-4ce1-b27b-cfb23f99dd68"
+                  name="Менеджер"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7450d053-7153-4e3c-b990-7a792a8fb8ff"
+                  name="Просмотр списка заказов"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4bd229f7-99fc-4ac2-9681-86564739d321"
+        name="Просмотр списка клиентов"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+        name="Просмотр списка заказов"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="d89449de-f217-4c90-a557-30378e9e4ca6"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="980dc64a-bd02-4e73-923d-d6aeacdd6f30"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="52acb191-e134-47d0-9064-3fb7fe5f3a14"
+        name="Просмотр списка услуг"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5afbcba9-dae9-4844-ae54-b5ee0882ff0c"
+        name="Просмотр списка техники"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
+        name="Просмотр списка категорий "
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="44dbacbb-6313-4d14-b544-920358a45958"
+        name="Просмотр конкретного клиента"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="41e10a0a-2d17-4feb-8a24-c5ab0920aa68">
+            <useCaseMoniker
+              Id="4bd229f7-99fc-4ac2-9681-86564739d321"
+              LastKnownName="Просмотр списка клиентов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9a407b8e-039e-49fd-8bd5-3bf8bf882cf6"
+        name="Удаление клиента / Изменение информации о клиенте"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="a7d182a2-5c0c-4a3f-870d-f9022a277c7a">
+            <useCaseMoniker
+              Id="44dbacbb-6313-4d14-b544-920358a45958"
+              LastKnownName="Просмотр конкретного клиента"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6946b031-c081-46d1-8adf-573bce59e439"
+        name="Добавление клиента"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="489cd34d-4eb0-474e-a27a-138e253bbbfb">
+            <useCaseMoniker
+              Id="4bd229f7-99fc-4ac2-9681-86564739d321"
+              LastKnownName="Просмотр списка клиентов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dc880a2d-7643-44e4-a122-c5aa2d2bd4b4"
+        name="Просмотр конкретной услуги"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="19e6566e-b206-40fe-91e1-feea6ec0da41">
+            <useCaseMoniker
+              Id="52acb191-e134-47d0-9064-3fb7fe5f3a14"
+              LastKnownName="Просмотр списка услуг"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="9b080bf7-144f-46a4-b9fe-6d5c358dc00a">
+            <useCaseMoniker
+              Id="a5c0d0fb-6d28-4642-89ac-f4d4800c0ef7"
+              LastKnownName="Просмотр конкретной категории"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="214ae2af-0157-4aa8-b535-afea61142456"
+        name="Удаление услуги / Изменение описания услуги"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7c13d23c-3774-4e36-af56-2358282e02bb">
+            <useCaseMoniker
+              Id="dc880a2d-7643-44e4-a122-c5aa2d2bd4b4"
+              LastKnownName="Просмотр конкретной услуги"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="29d5de67-9b0d-46b5-9fb7-e918eb01e6fa"
+        name="Добавление услуги"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4bff16c3-1d52-45b3-8162-feb4c036ce33">
+            <useCaseMoniker
+              Id="52acb191-e134-47d0-9064-3fb7fe5f3a14"
+              LastKnownName="Просмотр списка услуг"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="68a764c6-7d21-447e-9893-70f47cdba05f">
+            <useCaseMoniker
+              Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
+              LastKnownName="Просмотр списка категорий "
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c1654ae5-95c3-4cf9-856b-3a022a8d5d08"
+        name="Изменение описания услуги"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="91f98e7c-a6ae-43db-93d3-b2136ada5ef0">
+            <useCaseMoniker
+              Id="dc880a2d-7643-44e4-a122-c5aa2d2bd4b4"
+              LastKnownName="Просмотр конкретной услуги"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6660d3ee-d445-4b44-aa4c-2adfa67baf81"
+        name="Добавление техники"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="789f392e-b2e8-462e-b65f-6e8f107ec5d5">
+            <useCaseMoniker
+              Id="5afbcba9-dae9-4844-ae54-b5ee0882ff0c"
+              LastKnownName="Просмотр списка техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="c75a15a6-860d-4fa7-86ff-3976081f3a13">
+            <useCaseMoniker
+              Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
+              LastKnownName="Просмотр списка категорий "
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f91bcfb9-da86-433d-8846-d168cf56ea13"
+        name="Удаление техники / Изменение описания техники"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="279b1b9c-63e5-4da2-8c58-0cf56c1f5aa0">
+            <useCaseMoniker
+              Id="9e266f14-c656-458c-93ad-790cc71e3c5c"
+              LastKnownName="Просмотр конкретной техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9e266f14-c656-458c-93ad-790cc71e3c5c"
+        name="Просмотр конкретной техники"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d91e70cc-4917-47e2-bfd3-36beff300068">
+            <useCaseMoniker
+              Id="5afbcba9-dae9-4844-ae54-b5ee0882ff0c"
+              LastKnownName="Просмотр списка техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="2be3e03d-52f0-4712-b774-14f0de294dac">
+            <useCaseMoniker
+              Id="a5c0d0fb-6d28-4642-89ac-f4d4800c0ef7"
+              LastKnownName="Просмотр конкретной категории"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="8fc053a3-d353-4550-a9f3-4fbbddddda58">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4b4fb9d7-8b6e-449c-b1c7-4a4cca6a5a8c"
+        name="Изменение описания техники"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6189cbd1-66ba-462d-9696-1c264364cc70">
+            <useCaseMoniker
+              Id="9e266f14-c656-458c-93ad-790cc71e3c5c"
+              LastKnownName="Просмотр конкретной техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3be192bf-baf9-4896-b0ea-af209a8fe974"
+        name="Добавление категории"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0140fb5f-9cf1-4464-9e65-67ccf4a5546e">
+            <useCaseMoniker
+              Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
+              LastKnownName="Просмотр списка категорий "
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a5c0d0fb-6d28-4642-89ac-f4d4800c0ef7"
+        name="Просмотр конкретной категории"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d7c9703f-5104-47d1-a53d-a05e4735ef0c">
+            <useCaseMoniker
+              Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
+              LastKnownName="Просмотр списка категорий "
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cee05a3b-181d-40c2-970f-5ff1f95b21f8"
+        name="Удаление категории / Изменение описания категории"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="215cdac1-402a-442e-9bea-1bdd104ddc2c">
+            <useCaseMoniker
+              Id="a5c0d0fb-6d28-4642-89ac-f4d4800c0ef7"
+              LastKnownName="Просмотр конкретной категории"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c73bae21-c959-4e40-877c-e4409b7a1a18"
+        name="Просмотр списка мастерских"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="0a361f57-4b31-43d5-a965-6a9422e9114d"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="00cc39ea-0d4f-40d4-8d45-a5c5a5772b6b"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0db84162-e6ae-43a6-8881-f91794b3fe86"
+        name="Просмотр конкретной мастерской"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6e7279a7-4ca2-499e-9822-134901261d26">
+            <useCaseMoniker
+              Id="c73bae21-c959-4e40-877c-e4409b7a1a18"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1da5e22e-c0b6-46a8-ab3b-0c2bef8d571f"
+        name="Добавление мастерской"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="767509cb-67cd-46e2-a320-38c9a445a4c8">
+            <useCaseMoniker
+              Id="c73bae21-c959-4e40-877c-e4409b7a1a18"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="93fe0d9f-bd40-4b4d-8624-5fcb0a67bfb8"
+        name="Удаление мастерской / Изменение информации о мастерской"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4f134c62-d9c3-4125-876b-c379b46a0402">
+            <useCaseMoniker
+              Id="0db84162-e6ae-43a6-8881-f91794b3fe86"
+              LastKnownName="Просмотр конкретной мастерской"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ff49714b-6b45-4c59-8088-4f3d80e6c28f"
+        name="Просмотр списка заказов"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="41430790-ce8b-46a2-87a5-3edede83ded6"
+        name="Добавление заказа"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e77cab45-83f3-4863-bdfb-e21a3d22240d">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3cc19e12-7bd7-4b27-a08c-5fcdf000adb8"
+        name="Просмотр конкретного заказа"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1cf7ad21-714b-4a98-a2ca-7d7c8fbbab95">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="5290a29c-159e-424b-ac52-bfaa3eb6758f">
+            <useCaseMoniker
+              Id="1bdd35ab-5426-4c97-862b-4143f87c3e2d"
+              LastKnownName="Просмотр конкретного мастера"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="a3bfdc3f-47db-4d7f-8d93-50e587370831">
+            <useCaseMoniker
+              Id="44dbacbb-6313-4d14-b544-920358a45958"
+              LastKnownName="Просмотр конкретного клиента"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="bf0b2f83-ec1d-4bef-99c3-48dcd7248b34">
+            <useCaseMoniker
+              Id="9e266f14-c656-458c-93ad-790cc71e3c5c"
+              LastKnownName="Просмотр конкретной техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="d997614f-cef7-49a9-89d3-665cf28b6e10">
+            <useCaseMoniker
+              Id="0db84162-e6ae-43a6-8881-f91794b3fe86"
+              LastKnownName="Просмотр конкретной мастерской"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="b0266cf8-760d-4794-bf43-d97d1cc8b1e9">
+            <useCaseMoniker
+              Id="4bce850c-e496-4f16-a933-c5588d1b5898"
+              LastKnownName="Просмотр списка сотрудников"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="db36ad59-fcee-4322-9f9d-13f155faa352"
+        name="Удаление (отмена) заказа"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f2c754bc-6457-40fc-a322-91efcf965857">
+            <useCaseMoniker
+              Id="3cc19e12-7bd7-4b27-a08c-5fcdf000adb8"
+              LastKnownName="Просмотр конкретного заказа"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="105b702f-ac1a-49c5-81f5-5cf6d61b9727"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6be695ed-36ea-4eb5-ab6a-b20310383c74"
+        name="Просмотр списка мастеров"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="41c1caa0-be15-496d-a3c7-882844c76db1">
+            <useCaseMoniker
+              Id="4bce850c-e496-4f16-a933-c5588d1b5898"
+              LastKnownName="Просмотр списка сотрудников"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="8368f3b8-977f-414e-a0d9-dd4b60f69001">
+            <useCaseMoniker
+              Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
+              LastKnownName="Просмотр списка категорий "
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="760d92e2-7160-4db4-b35d-3a2941791a8a">
+            <useCaseMoniker
+              Id="5ff621dd-c61d-426b-b725-63c7d9ca5f2d"
+              LastKnownName="Просмотр списка ролей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="de05a12b-cd90-48d2-894c-1c69ad770f7e"
+        name="Просмотр списка менеджеров"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1e34c432-1ced-44eb-a08b-69fd9b7add52">
+            <useCaseMoniker
+              Id="4bce850c-e496-4f16-a933-c5588d1b5898"
+              LastKnownName="Просмотр списка сотрудников"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="b039c984-6174-4250-be14-cc6dad94d499">
+            <useCaseMoniker
+              Id="5ff621dd-c61d-426b-b725-63c7d9ca5f2d"
+              LastKnownName="Просмотр списка ролей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1bdd35ab-5426-4c97-862b-4143f87c3e2d"
+        name="Просмотр конкретного мастера"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="24cac555-0c3f-4745-a4e0-f0f6fec13826">
+            <useCaseMoniker
+              Id="6be695ed-36ea-4eb5-ab6a-b20310383c74"
+              LastKnownName="Просмотр списка мастеров"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="a08d8ee1-f53a-4c55-bf69-2e3a97eaa5b1">
+            <useCaseMoniker
+              Id="c73bae21-c959-4e40-877c-e4409b7a1a18"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="07155dc2-43c3-4d72-a181-470c462a6462"
+        name="Удаление мастера / Изменение информации о мастере"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="01e4fc3c-4ede-454b-b927-6f8f325fa00d">
+            <useCaseMoniker
+              Id="1bdd35ab-5426-4c97-862b-4143f87c3e2d"
+              LastKnownName="Просмотр конкретного мастера"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aa6e49e6-ee7b-4c6b-8caf-f654ec927f01"
+        name="Просмотр конкретного менеджера"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4fc7aec4-b775-4494-a08b-3e9469c08dc6">
+            <useCaseMoniker
+              Id="de05a12b-cd90-48d2-894c-1c69ad770f7e"
+              LastKnownName="Просмотр списка менеджеров"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9f8299ce-e92a-4d9e-8139-1124bbf87558"
+        name="Удаление менеджера / Изменение информации о менеджере"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1211e1cc-e053-4acd-91bb-fa5a8cfa1465">
+            <useCaseMoniker
+              Id="aa6e49e6-ee7b-4c6b-8caf-f654ec927f01"
+              LastKnownName="Просмотр конкретного менеджера"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2d51155c-8e60-46e2-b7fc-86768556a59d"
+        name="Изменение информации о менеджере"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="8efe6774-cc80-4d74-9919-23d94088a3d1">
+            <useCaseMoniker
+              Id="aa6e49e6-ee7b-4c6b-8caf-f654ec927f01"
+              LastKnownName="Просмотр конкретного менеджера"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="12b9c7bc-a4aa-4a89-8087-2731f5b1043b"
+        name="Добавить новый заказ"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="779123a8-9ec3-4c70-94d8-9d98a88481ac">
+            <useCaseMoniker
+              Id="44dbacbb-6313-4d14-b544-920358a45958"
+              LastKnownName="Просмотр конкретного клиента"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b9792451-87be-4880-86ae-627c1f6ea6c3"
+        name="Просмотр списка заказов клиента"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="202e9282-7ab2-471b-b1d2-3f033c115f52">
+            <useCaseMoniker
+              Id="44dbacbb-6313-4d14-b544-920358a45958"
+              LastKnownName="Просмотр конкретного клиента"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="d269eae2-a181-4f7a-933f-beefa25a76da">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4ae0008a-465d-4e9b-bbfb-f29249f5bd8f"
+        name="Просмотр истории ремонта техники"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="88777a76-88ad-491c-9e0b-f7f9ef5792a0">
+            <useCaseMoniker
+              Id="9e266f14-c656-458c-93ad-790cc71e3c5c"
+              LastKnownName="Просмотр конкретной техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="9b16fafd-bc7a-4e03-9355-5f5f8300b4aa">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cbf4b533-0d16-453a-9036-be9bab9adaa7"
+        name="Добавление мастера"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b569bc9e-d10b-4018-8d1f-a8bafcef6521">
+            <useCaseMoniker
+              Id="6be695ed-36ea-4eb5-ab6a-b20310383c74"
+              LastKnownName="Просмотр списка мастеров"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="7538ddeb-555e-4541-abb3-de029f2c3a09">
+            <useCaseMoniker
+              Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
+              LastKnownName="Просмотр списка категорий "
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f7503cd5-7786-4f74-8bc9-def8c474a896"
+        name="Добавить менеджера"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4336123b-381b-4dfe-9ca3-95d56fe14796">
+            <useCaseMoniker
+              Id="de05a12b-cd90-48d2-894c-1c69ad770f7e"
+              LastKnownName="Просмотр списка менеджеров"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fe4ffbca-51fc-4ba1-bd37-afa07ec88f23"
+        name="Просмотр мастера отчетов"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3006774d-7306-47ef-badf-9e6657202f60"
+        name="Поиск самых нагруженных мастерских"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="539a4491-0671-4c6d-9b20-5a2d0c51f8d7">
+            <useCaseMoniker
+              Id="c73bae21-c959-4e40-877c-e4409b7a1a18"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="a0aff408-767e-437c-8c72-faf10c16b7b6">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="ab84d683-e41b-4360-8316-c331f2fac82e">
+            <useCaseMoniker
+              Id="fe4ffbca-51fc-4ba1-bd37-afa07ec88f23"
+              LastKnownName="Просмотр мастера отчетов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9fa1bf10-be41-42e8-835c-749d9abd119a"
+        name="Поиск самых популярных видов (категорий) техники"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="5213d334-bab8-474d-9a46-b472db3dd5ca">
+            <useCaseMoniker
+              Id="fe4ffbca-51fc-4ba1-bd37-afa07ec88f23"
+              LastKnownName="Просмотр мастера отчетов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="680f32a3-bb1d-447c-b1e0-0af25e1dbdb8">
+            <useCaseMoniker
+              Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
+              LastKnownName="Просмотр списка категорий "
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="25a20188-dead-47f3-9641-8316fb4744f4">
+            <useCaseMoniker
+              Id="5afbcba9-dae9-4844-ae54-b5ee0882ff0c"
+              LastKnownName="Просмотр списка техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="11613ffd-8c57-4325-88ef-a7561e3f303e">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b8ac1c9a-1a3a-4bae-b5c6-cd756a1d2f9e"
+        name="Поиск самых популярных услуг"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="9643d6a4-fe2e-46be-a7ed-943f4fc93fbb">
+            <useCaseMoniker
+              Id="fe4ffbca-51fc-4ba1-bd37-afa07ec88f23"
+              LastKnownName="Просмотр мастера отчетов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="c7e357a7-c5d7-4570-9f3b-3e4f357a1009">
+            <useCaseMoniker
+              Id="52acb191-e134-47d0-9064-3fb7fe5f3a14"
+              LastKnownName="Просмотр списка услуг"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="5b09039c-fcae-459e-ba44-fb7883d9af92">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="86d4e867-d863-4d3d-969e-192460864ccd"
+        name="Просмотр заказов мастера"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9da8dfb7-237b-497b-8bcc-5c7dc71bd184">
+            <useCaseMoniker
+              Id="1bdd35ab-5426-4c97-862b-4143f87c3e2d"
+              LastKnownName="Просмотр конкретного мастера"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="33aa3a33-5232-4415-897f-cb80ecf20fe7">
+            <useCaseMoniker
+              Id="ed158c82-f7cd-4a35-b9c7-c8c547e7dcb8"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="92a8827f-e444-401d-bcef-ef667a0484d1"
+        name="Просмотр списка визитов"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b9bad5e-19df-4a6b-9465-3ab099c4a9d9"
+        name="Добавить визить к заказу"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1dd9a4ed-a218-43f0-a56d-cf6e4aca62c8">
+            <useCaseMoniker
+              Id="92a8827f-e444-401d-bcef-ef667a0484d1"
+              LastKnownName="Просмотр списка визитов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="cd6a3818-9041-473f-a661-7340746aed18">
+            <useCaseMoniker
+              Id="980dc64a-bd02-4e73-923d-d6aeacdd6f30"
+              LastKnownName="Просмотр списка заказов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="62efd826-80ec-40d5-a551-087a8eec86b7"
+        name="Удаление/изменение визита"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="2f5d7a7a-973e-4e5e-9970-0e915c161b30">
+            <useCaseMoniker
+              Id="d5347f90-c1ed-47e4-adee-b64366cb8045"
+              LastKnownName="Просмотр конкретного визита"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d5347f90-c1ed-47e4-adee-b64366cb8045"
+        name="Просмотр конкретного визита"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="17b114c2-af3f-412c-8d6f-9df952ad09bd">
+            <useCaseMoniker
+              Id="92a8827f-e444-401d-bcef-ef667a0484d1"
+              LastKnownName="Просмотр списка визитов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8ff18a10-70cb-44d7-8bec-ec144292e2f2"
+        name="Просмотр списка сотрудников"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fde363b4-860d-44b7-bcd3-187858802778"
+        name="Просмотр списка поставок"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="873594d5-94ac-4639-a5cf-020c08e1f61e">
+            <useCaseMoniker
+              Id="00cc39ea-0d4f-40d4-8d45-a5c5a5772b6b"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="476984c5-5521-4b4d-affa-b6ee7c0a324b"
+        name="Добавление поставки"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="189d5512-84d6-4236-abb2-05a62bb79dcf">
+            <useCaseMoniker
+              Id="fde363b4-860d-44b7-bcd3-187858802778"
+              LastKnownName="Просмотр списка поставок"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="50e5a868-e973-468d-acdb-17a1eb9cd3d3"
+        name="Просмотр конкретной поставки"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e1bc6d5e-a36b-4342-a8f1-758a7eccd757">
+            <useCaseMoniker
+              Id="fde363b4-860d-44b7-bcd3-187858802778"
+              LastKnownName="Просмотр списка поставок"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e0fb55f0-332a-42d5-8c5d-5d8f23578cf4"
+        name="Удаление/изменение поставки"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4aa8ad3a-9d65-4e85-ac02-a95d221fbde3">
+            <useCaseMoniker
+              Id="50e5a868-e973-468d-acdb-17a1eb9cd3d3"
+              LastKnownName="Просмотр конкретной поставки"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7d97eca2-fad1-40bc-a43b-d0c6265cd572"
+        name="Просмотр списка деталей"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4a386df3-aafe-46f4-bacb-6373cd62e4e6"
+        name="Добавление новых деталей"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1fe0dfdd-5f40-41be-a04c-134473ac038c">
+            <useCaseMoniker
+              Id="7d97eca2-fad1-40bc-a43b-d0c6265cd572"
+              LastKnownName="Просмотр списка деталей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="39d9f874-f6f3-480c-ad32-67e32a1cb44c"
+        name="Просмотр конкретной детали"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="58a1ce86-e912-4617-82cc-851adc70de45">
+            <useCaseMoniker
+              Id="7d97eca2-fad1-40bc-a43b-d0c6265cd572"
+              LastKnownName="Просмотр списка деталей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b246688b-8592-4006-94f3-430ed87a1520"
+        name="Удаление/изменение деталей"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6f991fb4-c1fb-4bcd-b8e5-84890d606926">
+            <useCaseMoniker
+              Id="39d9f874-f6f3-480c-ad32-67e32a1cb44c"
+              LastKnownName="Просмотр конкретной детали"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ec38451c-526b-4616-9025-443c466fe6fc"
+        name="Заказ деталей этого типа"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="598dd15b-f18a-46be-a9cf-33531d9faa47">
+            <useCaseMoniker
+              Id="39d9f874-f6f3-480c-ad32-67e32a1cb44c"
+              LastKnownName="Просмотр конкретной детали"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="5cca6837-0a11-4150-a97b-c49693269ceb">
+            <useCaseMoniker
+              Id="476984c5-5521-4b4d-affa-b6ee7c0a324b"
+              LastKnownName="Добавление поставки"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="00cc39ea-0d4f-40d4-8d45-a5c5a5772b6b"
+        name="Просмотр списка мастерских"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5ff621dd-c61d-426b-b725-63c7d9ca5f2d"
+        name="Просмотр списка ролей"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="69dfa84d-38a9-4f18-bab3-760ba479ddb5"
+        name="Добавление новых ролей"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="633fe7b5-019f-4e3f-878b-f2cbe87d47cb">
+            <useCaseMoniker
+              Id="5ff621dd-c61d-426b-b725-63c7d9ca5f2d"
+              LastKnownName="Просмотр списка ролей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aee51836-4df6-487d-a456-43bc7475c0d6"
+        name="Просмотр конкретной роли"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="b255629a-2cd0-4aed-9f07-8373e32f4021">
+            <useCaseMoniker
+              Id="5ff621dd-c61d-426b-b725-63c7d9ca5f2d"
+              LastKnownName="Просмотр списка ролей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d556feea-f651-4841-842a-4308954c8ac2"
+        name="Удаление/Изменеие роли"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9c59beeb-5407-4419-bcf6-edfb5b8b5a22">
+            <useCaseMoniker
+              Id="aee51836-4df6-487d-a456-43bc7475c0d6"
+              LastKnownName="Просмотр конкретной роли"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8da66f71-ce73-4430-8136-0e956a39b862"
+        name="Формирование расписания"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="36596a14-b685-4c94-9eb7-69d7f3a64405">
+            <useCaseMoniker
+              Id="93fe0d9f-bd40-4b4d-8624-5fcb0a67bfb8"
+              LastKnownName="Удаление мастерской / Изменение информации о мастерской"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="766c8210-8db8-41d9-b2b7-01e2a89bf348"
+        name="Формирование расписания"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f5cb1f0a-6507-4194-b137-a370b98abe82">
+            <useCaseMoniker
+              Id="9f8299ce-e92a-4d9e-8139-1124bbf87558"
+              LastKnownName="Удаление менеджера / Изменение информации о менеджере"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="433c0624-01ac-4387-8e5c-f554a4ee1e1e"
+        name="Формирование расписания"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5edd85bb-f532-4b93-bd9f-7fb919dfaf4b">
+            <useCaseMoniker
+              Id="07155dc2-43c3-4d72-a181-470c462a6462"
+              LastKnownName="Удаление мастера / Изменение информации о мастере"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
