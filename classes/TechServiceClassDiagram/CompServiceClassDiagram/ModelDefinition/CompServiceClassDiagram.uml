@@ -7972,7 +7972,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="610bdd75-3e94-4026-9262-2e74686a2b71"
+                  Id="88550f78-70ae-4411-ac38-0957a53bd788"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -7980,20 +7980,6 @@
                     <primitiveTypeMoniker
                       Id="220a3521-e091-4221-bae9-3ef9018e845c"
                       LastKnownName="Integer"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="762f34ef-0fb5-4359-9fcc-39c9fc8b6fe5"
-                  name="inMyWorkshop"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
                       LastKnownLocation="CompServiceClassDiagram.uml" />
                   </type_NamedElement>
                 </parameter>

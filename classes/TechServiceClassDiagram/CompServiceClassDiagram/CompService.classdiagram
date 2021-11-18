@@ -4222,18 +4222,10 @@
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="2b777af5-7650-4055-b877-66f08e2b2f81" name="count" direction="In" isUnique="false">
-                  <elementDefinition Id="610bdd75-3e94-4026-9262-2e74686a2b71" />
+                <parameter Id="7a75c365-4423-4743-b5c6-3e7d462412ac" name="count" direction="In" isUnique="false">
+                  <elementDefinition Id="88550f78-70ae-4411-ac38-0957a53bd788" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="bed62a32-5b87-4e40-9259-b99a5a7769a5" LastKnownName="Integer" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="a3fd11f1-c8bd-4564-af89-67461b665bae" name="inMyWorkshop" direction="In" isUnique="false">
-                  <elementDefinition Id="762f34ef-0fb5-4359-9fcc-39c9fc8b6fe5" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
