@@ -13,3 +13,31 @@
   <li>повышение эффективности функционирования центра в целом</li>
 </ul>
 
+<hr>
+
+## Диаграмма классов
+![](./images/Classes_TechServ_Sergei.png "Диаграмма классов")
+
+### Список классов
+ - [Person](./descriptions/person.md "Класс Person")
+ - [Client](./descriptions/client.md "Класс Client")
+ - [Employee](./descriptions/employee.md "Класс Employee")
+ - [Manager](./descriptions/manager.md "Класс Manager")
+ - [Master](./descriptions/master.md "Класс Master")
+ - [EmployeeTimetable](./descriptions/employeeTimetable.md "Класс EmployeeTimetable")
+ - [Role](./descriptions/role.md "Класс Role")
+ - [Permission](./descriptions/permission.md "Класс Permission")
+ - [Category](./descriptions/category.md "Класс Category")
+ - [Product](./descriptions/product.md "Класс Product")
+ - [Service](./descriptions/service.md "Класс Service")
+ - [Order](./descriptions/order.md "Класс Order")
+ - [OrderServices](./orderServices.md "Класс OrderServices")
+ - [OrderAtHome](./descriptions/orderAtHome.md "Класс OrderAtHome")
+ - [Visit](./descriptions/visit.md "Класс Visit")
+ - [SparePart](./descriptions/sparepart.md "Класс SparePart")
+ - [OrderSpareParts](./descriptions/orderSpareparts.md "Класс OrderSpareParts")
+ - [Batch](./descriptions/batch.md "Класс Batch")
+ - [BatchSpareParts](./descriptions/batchSpareparts.md "Класс BatchSpareParts")
+ - [Workshop](./descriptions/workshop.md "Класс Workshop")
+ - [WorkshopTimetable](./descriptions/workshopTimetable.md "Класс WorkshopTimetalbe")
+ - [SortingClasses (static)](./descriptions/staticLists.md "Статические классы сортировки")
