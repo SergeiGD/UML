@@ -1240,42 +1240,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="06722aa2-2373-40e9-a41f-b5f7ffa58d49" />
           </association>
-          <association Id="9567f275-bf6b-4086-866d-939125ad7eac" isDerived="false" sourceEndRoleName="Order" targetEndRoleName="Service" isLeaf="false" isAbstract="false">
-            <classMoniker Id="60a4334c-dbe6-43a7-b0f6-19e3f89831ed" LastKnownName="Service" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2cd954f7-3698-4c41-a0aa-60f6b26c29a9" name="Order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString Id="ce1ce1c6-9472-42f3-90d7-8a29767b83c5" name="Lower" value="0">
-                      <elementDefinition Id="f33b936d-70fd-4060-9645-1e94160eb8bd" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="025c5255-0421-4c32-b9d7-f9b5bbb0efb0" name="Upper" value="*">
-                      <elementDefinition Id="df396a8e-577f-4d99-9a95-6b57e0afc593" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="0c82b55b-5c67-453d-beb7-8e7e04eb3282" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="8cd5cd6e-7b4a-410e-a80c-b79602bd543e" name="Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <lowerValueInternal>
-                    <literalString Id="2cea4ee5-09cd-4495-a368-4fb1ad66712d" name="Lower" value="1">
-                      <elementDefinition Id="bde5d4dc-9edb-4eb3-a63a-a62b8538b331" />
-                    </literalString>
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString Id="5e5324ee-a61c-4348-9111-2e779ffb81e0" name="Upper" value="*">
-                      <elementDefinition Id="2d707af2-e605-4612-8ce4-aa1121c19758" />
-                    </literalString>
-                  </upperValueInternal>
-                  <elementDefinition Id="032f0d31-0749-4efa-b361-002bc246664b" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="47a439f5-2b2f-4588-9f29-e8b08f932037" />
-          </association>
           <association Id="36ca54d4-0b06-4b5f-add0-19f71aca0baf" isDerived="false" sourceEndRoleName="Order" targetEndRoleName="Master" isLeaf="false" isAbstract="false">
             <classMoniker Id="f87435e5-83d1-45e9-8965-813f6d8a5e7d" LastKnownName="Master" />
             <relationshipOwnedElementsInternal>
@@ -1415,6 +1379,42 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="e4f84773-549d-46bf-81f3-322a028c5934" />
+          </association>
+          <association Id="56994a21-5baf-4dfd-801f-0b89c87f703f" isDerived="false" sourceEndRoleName="Order" targetEndRoleName="OrderServices" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f44e71d1-104b-44ed-86a0-4e29fb8f812c" LastKnownName="OrderServices" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e671f43-91d6-444d-a33a-fe0c7737c327" name="Order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="cfa5c1e7-7034-4f44-b141-d0ca56f4c9a0" name="Lower" value="0">
+                      <elementDefinition Id="8b32299d-efdb-43d7-a564-dace167557b4" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7b56c9f5-198f-446f-b850-b4197d30fab7" name="Upper" value="1">
+                      <elementDefinition Id="2f6aaa44-e525-42be-8aa0-646225746cad" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ac3d9773-1713-4bae-96b8-0e20acbedb23" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="154b930a-7003-4b99-a43b-90376dce6b1c" name="OrderServices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="ed2e0903-972d-4ae7-a5ea-42e883440bac" name="Lower" value="1">
+                      <elementDefinition Id="dfe371d5-2d09-4ff2-bdf9-3252a09c48e9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4092d0e2-149f-4265-9eff-a728edfbe690" name="Upper" value="*">
+                      <elementDefinition Id="b6d201db-3f3d-4104-b180-8ff0f40f84de" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="844b5d67-df0c-4fef-9b3d-1ce251ddd26c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="500588e1-5910-4fe0-84c4-1d1f1c15cd42" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
@@ -1571,8 +1571,8 @@
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="982072ab-df2f-4e91-bc5a-3cdf1b29758f" name="Service" direction="In" isUnique="false">
-                  <elementDefinition Id="d4ed03c4-0279-4252-8e84-42e5d9cc786c" />
+                <parameter Id="f88547f0-c63e-4874-aeb8-9809583f985d" name="OrderServices" direction="In" isUnique="false">
+                  <elementDefinition Id="02f679d5-a9b0-4c8e-a4b6-c40edf816884" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1589,13 +1589,8 @@
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="e9899aa5-1173-4e5b-bd60-77227dc112f7" name="Service" direction="In" isUnique="false">
-                  <elementDefinition Id="a2629bb6-a730-40e3-8e5a-37066c476cad" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="22a0fee7-cc97-469e-ab02-3cee926c38bc" name="integer" direction="In" isUnique="false">
-                  <elementDefinition Id="0796f966-9122-4b61-83a6-b03301c3217e" />
+                <parameter Id="ff9fd32e-6211-4e70-96e6-bc83213e6d0e" name="OrderServices" direction="In" isUnique="false">
+                  <elementDefinition Id="f3073e93-77e7-407a-a519-f6e6adbe6f56" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -1607,7 +1602,7 @@
                 <parameter Id="90c532e0-0518-4af8-95fa-1f1e8434d582" direction="Return" isUnique="false">
                   <elementDefinition Id="aa804b9d-6990-4450-ba75-028c581d8f67" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="6dfb722a-bf39-4310-9e1e-9892c002b7ae" LastKnownName="Dictionary&lt;Sevice, integer&gt;" />
+                    <referencedTypeMoniker Id="cef214f0-1a08-4369-af4b-81010021238c" LastKnownName="List&lt;OrderServices&gt;" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -1732,29 +1727,6 @@
                   <elementDefinition Id="4de82834-35a6-42ac-b860-0aebbcea1709" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="d0e2218a-5be7-46cf-97a2-091e3a6a80e0" LastKnownName="decimal" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="0618ed65-7a08-4c7c-84f0-eeb7a052394c" name="EditServiceQuantity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="c4981972-f048-4825-8e88-2872f1c561c5" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="b96f7071-d85d-4842-8ca8-1b6c59028251" name="Service" direction="In" isUnique="false">
-                  <elementDefinition Id="36210fdc-c549-4fc9-a435-d2efd0645e9f" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="c5742f0a-0e25-41c6-8fcc-ca58e7c8e8aa" name="Integer" direction="In" isUnique="false">
-                  <elementDefinition Id="4737bb08-b342-4907-a514-43aab055efd6" />
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="23698387-8c0d-45ba-8b47-882ac882a502" direction="Return" isUnique="false">
-                  <elementDefinition Id="b886a2c6-517c-4d9c-9367-46cb83df2508" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -5842,9 +5814,90 @@
         <elementDefinition Id="fe8e2001-abe1-4426-acf3-6a664ab22cf1" />
       </referencedType>
     </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f44e71d1-104b-44ed-86a0-4e29fb8f812c" name="OrderServices" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a83edafe-3de3-45b6-856a-d388b4dc4dea" />
+        <targetEnds>
+          <association Id="28671a76-d2bc-4617-9508-fe81f9dd1bd2" isDerived="false" sourceEndRoleName="OrderServices" targetEndRoleName="Service" isLeaf="false" isAbstract="false">
+            <classMoniker Id="60a4334c-dbe6-43a7-b0f6-19e3f89831ed" LastKnownName="Service" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c114ff0d-74a5-468a-815a-19beb045756b" name="OrderServices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="e4e4758a-8859-4712-946c-fb8bddf41f5e" name="Lower" value="0">
+                      <elementDefinition Id="1212f6b5-19b5-4ec8-8305-e3bbd8606d49" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="96562982-48b7-46ed-907f-042a83a15dc6" name="Upper" value="*">
+                      <elementDefinition Id="e430d71a-987c-48f4-9052-c695b6449f13" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="c348ab56-7592-46fe-8e9b-fae9f80b0180" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="df762860-bff8-45c9-ba18-84a81f5e6d8f" name="Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="15dc7fb9-66c5-43c1-8d72-0acd83e74473" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e1815153-7a29-4198-b3fe-0f13e0efcc4d" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="7ed0df70-dab1-4b62-9729-8272a789b020" name="Service" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="975f62e0-44b4-4ba8-9f46-d12727956f24" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9366a8a0-2c9f-4aeb-81b2-7a52156b3689" LastKnownName="Service" />
+            </type_NamedElement>
+          </property>
+          <property Id="373101b2-1123-452c-b8f8-70720e92940b" name="Count" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0204d832-1586-4055-b102-f99b37e8c486" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bed62a32-5b87-4e40-9259-b99a5a7769a5" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="6d6e0009-f843-4da8-a907-c2a603a57562" name="Sale" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="be283163-4636-4818-86fc-c32229e7ebee" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5655a02a-7ae5-4a44-9419-3de5361f9934" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6a22b606-3bdc-4767-ae80-2a86ea32f6a4" name="EditOrderServices" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f208fb8e-1435-44c9-b9ef-c3381b7691c4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7bf39127-43fd-46c4-bff0-209e44e7f0a4" direction="Return" isUnique="false">
+                  <elementDefinition Id="b273e863-556e-4476-841f-af647e2e99d1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a8f8bcf3-3053-43cd-ac86-c798b625ea15" name="OrderServices" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af138440-4c0b-4b1a-881b-fb654d5602b0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="83c28543-a853-460a-896d-9a0501435274" direction="Return" isUnique="false">
+                  <elementDefinition Id="668dcb33-6e2b-4cf2-8d7c-8aaeaf160c2f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="62e1c591-1fc8-4d49-889d-ba3d80faa959" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="6dfb722a-bf39-4310-9e1e-9892c002b7ae" name="Dictionary&lt;Sevice, integer&gt;" isAbstract="false" isLeaf="false" cachedFullName="Dictionary&lt;Sevice, integer&gt;">
-        <elementDefinition Id="459438d4-3a63-4a41-9b6b-5cd064888f2f" />
+      <referencedType Id="cef214f0-1a08-4369-af4b-81010021238c" name="List&lt;OrderServices&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;OrderServices&gt;">
+        <elementDefinition Id="fc1a0f87-a3fa-4b33-b056-0d63220a37f6" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

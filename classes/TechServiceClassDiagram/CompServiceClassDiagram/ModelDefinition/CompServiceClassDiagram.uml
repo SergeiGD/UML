@@ -2397,71 +2397,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="47a439f5-2b2f-4588-9f29-e8b08f932037"
-            isDerived="false"
-            sourceEndRoleName="Order"
-            targetEndRoleName="Service"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="b0c4b702-5e5a-4e3c-8cd4-918150c7b380"
-              LastKnownName="Service"
-              LastKnownLocation="CompServiceClassDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0c82b55b-5c67-453d-beb7-8e7e04eb3282"
-                  name="Order"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="f33b936d-70fd-4060-9645-1e94160eb8bd"
-                      name="Lower"
-                      value="0" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="df396a8e-577f-4d99-9a95-6b57e0afc593"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="032f0d31-0749-4efa-b361-002bc246664b"
-                  name="Service"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="bde5d4dc-9edb-4eb3-a63a-a62b8538b331"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="2d707af2-e605-4612-8ce4-aa1121c19758"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="804c733e-a2a7-4a6a-a1f8-6081119b9f65"
             isDerived="false"
             sourceEndRoleName="Order"
@@ -2727,6 +2662,71 @@
                   <upperValueInternal>
                     <literalString
                       Id="15229eef-6c3d-4cd9-9eac-24b07a13663a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="500588e1-5910-4fe0-84c4-1d1f1c15cd42"
+            isDerived="false"
+            sourceEndRoleName="Order"
+            targetEndRoleName="OrderServices"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a83edafe-3de3-45b6-856a-d388b4dc4dea"
+              LastKnownName="OrderServices"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac3d9773-1713-4bae-96b8-0e20acbedb23"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8b32299d-efdb-43d7-a564-dace167557b4"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2f6aaa44-e525-42be-8aa0-646225746cad"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="844b5d67-df0c-4fef-9b3d-1ce251ddd26c"
+                  name="OrderServices"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dfe371d5-2d09-4ff2-bdf9-3252a09c48e9"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b6d201db-3f3d-4104-b180-8ff0f40f84de"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -3164,8 +3164,8 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="d4ed03c4-0279-4252-8e84-42e5d9cc786c"
-                  name="Service"
+                  Id="02f679d5-a9b0-4c8e-a4b6-c40edf816884"
+                  name="OrderServices"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -3195,15 +3195,8 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="a2629bb6-a730-40e3-8e5a-37066c476cad"
-                  name="Service"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0796f966-9122-4b61-83a6-b03301c3217e"
-                  name="integer"
+                  Id="f3073e93-77e7-407a-a519-f6e6adbe6f56"
+                  name="OrderServices"
                   direction="In"
                   isUnique="false" />
               </operationHasOwnedParameters>
@@ -3225,8 +3218,8 @@
                   isUnique="false">
                   <type_NamedElement>
                     <undefinedTypeMoniker
-                      Id="459438d4-3a63-4a41-9b6b-5cd064888f2f"
-                      LastKnownName="Dictionary&lt;Sevice, integer&gt;"
+                      Id="fc1a0f87-a3fa-4b33-b056-0d63220a37f6"
+                      LastKnownName="List&lt;OrderServices&gt;"
                       LastKnownLocation="CompServiceClassDiagram.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -3447,44 +3440,6 @@
                     <undefinedTypeMoniker
                       Id="bb3d1d49-bf88-4270-b5ad-3f1901f7c1e5"
                       LastKnownName="decimal"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="c4981972-f048-4825-8e88-2872f1c561c5"
-            name="EditServiceQuantity"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="36210fdc-c549-4fc9-a435-d2efd0645e9f"
-                  name="Service"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="4737bb08-b342-4907-a514-43aab055efd6"
-                  name="Integer"
-                  direction="In"
-                  isUnique="false" />
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="b886a2c6-517c-4d9c-9367-46cb83df2508"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
                       LastKnownLocation="CompServiceClassDiagram.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -10960,6 +10915,180 @@
       <undefinedType
         Id="459438d4-3a63-4a41-9b6b-5cd064888f2f"
         name="Dictionary&lt;Sevice, integer&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a83edafe-3de3-45b6-856a-d388b4dc4dea"
+        name="OrderServices"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e1815153-7a29-4198-b3fe-0f13e0efcc4d"
+            isDerived="false"
+            sourceEndRoleName="OrderServices"
+            targetEndRoleName="Service"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b0c4b702-5e5a-4e3c-8cd4-918150c7b380"
+              LastKnownName="Service"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c348ab56-7592-46fe-8e9b-fae9f80b0180"
+                  name="OrderServices"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1212f6b5-19b5-4ec8-8305-e3bbd8606d49"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e430d71a-987c-48f4-9052-c695b6449f13"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15dc7fb9-66c5-43c1-8d72-0acd83e74473"
+                  name="Service"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="975f62e0-44b4-4ba8-9f46-d12727956f24"
+            name="Service"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b0c4b702-5e5a-4e3c-8cd4-918150c7b380"
+                LastKnownName="Service"
+                LastKnownLocation="CompServiceClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0204d832-1586-4055-b102-f99b37e8c486"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="CompServiceClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="be283163-4636-4818-86fc-c32229e7ebee"
+            name="Sale"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e8ebf5e8-de13-45f5-8443-aae752a51d1b"
+                LastKnownName="double"
+                LastKnownLocation="CompServiceClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f208fb8e-1435-44c9-b9ef-c3381b7691c4"
+            name="EditOrderServices"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b273e863-556e-4476-841f-af647e2e99d1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="af138440-4c0b-4b1a-881b-fb654d5602b0"
+            name="OrderServices"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="668dcb33-6e2b-4cf2-8d7c-8aaeaf160c2f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="96d274f9-94d3-40c5-bc6d-9f61b50251a3"
+                      LastKnownName="void"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="fc1a0f87-a3fa-4b33-b056-0d63220a37f6"
+        name="List&lt;OrderServices&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
