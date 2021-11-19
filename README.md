@@ -48,3 +48,8 @@
 ![](./images/UseCases_TechServ_Sergei.png "Диаграмма прецедентов")
 
 <hr>
+
+## Диаграмма состояний
+![](./images/Statechart_TechServ_Sergei.png "Диаграмма состояний")
+
+<hr>
