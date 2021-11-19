@@ -41,3 +41,10 @@
  - [Workshop](./descriptions/workshop.md "Класс Workshop")
  - [WorkshopTimetable](./descriptions/workshopTimetable.md "Класс WorkshopTimetalbe")
  - [SortingClasses (static)](./descriptions/staticLists.md "Статические классы сортировки")
+
+<hr>
+
+## Диаграмма прецедентов
+![](./images/UseCases_TechServ_Sergei.png "Диаграмма прецедентов")
+
+<hr>

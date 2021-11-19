@@ -534,6 +534,29 @@
               LastKnownLocation="CompServiceUseCase.uml" />
           </extend>
         </extendedCases>
+        <additions>
+          <include
+            Id="f896ed27-e7cb-45d3-aaa3-456251373783">
+            <useCaseMoniker
+              Id="5afbcba9-dae9-4844-ae54-b5ee0882ff0c"
+              LastKnownName="Просмотр списка техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="31d3e047-9cd9-4f0a-915d-49f6578c7959">
+            <useCaseMoniker
+              Id="52acb191-e134-47d0-9064-3fb7fe5f3a14"
+              LastKnownName="Просмотр списка услуг"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="43e7fbb6-d4b0-4505-8cae-7d3fd7886a8a">
+            <useCaseMoniker
+              Id="7d97eca2-fad1-40bc-a43b-d0c6265cd572"
+              LastKnownName="Просмотр списка деталей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -735,6 +758,29 @@
               LastKnownLocation="CompServiceUseCase.uml" />
           </generalization>
         </generalsInternal>
+        <additions>
+          <include
+            Id="0c0b5655-4418-44af-ab66-1bb29200c3e3">
+            <useCaseMoniker
+              Id="5afbcba9-dae9-4844-ae54-b5ee0882ff0c"
+              LastKnownName="Просмотр списка техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="8a253962-8a6f-45ba-953d-edc492b502f8">
+            <useCaseMoniker
+              Id="52acb191-e134-47d0-9064-3fb7fe5f3a14"
+              LastKnownName="Просмотр списка услуг"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="a56def11-f25f-496e-a3ce-9f164bd6754e">
+            <useCaseMoniker
+              Id="7d97eca2-fad1-40bc-a43b-d0c6265cd572"
+              LastKnownName="Просмотр списка деталей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1843,57 +1889,6 @@
         name="Просмотр списка ролей"
         isAbstract="false"
         isLeaf="false" />
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase
-        Id="69dfa84d-38a9-4f18-bab3-760ba479ddb5"
-        name="Добавление новых ролей"
-        isAbstract="false"
-        isLeaf="false">
-        <extendedCases>
-          <extend
-            Id="633fe7b5-019f-4e3f-878b-f2cbe87d47cb">
-            <useCaseMoniker
-              Id="5ff621dd-c61d-426b-b725-63c7d9ca5f2d"
-              LastKnownName="Просмотр списка ролей"
-              LastKnownLocation="CompServiceUseCase.uml" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase
-        Id="aee51836-4df6-487d-a456-43bc7475c0d6"
-        name="Просмотр конкретной роли"
-        isAbstract="false"
-        isLeaf="false">
-        <extendedCases>
-          <extend
-            Id="b255629a-2cd0-4aed-9f07-8373e32f4021">
-            <useCaseMoniker
-              Id="5ff621dd-c61d-426b-b725-63c7d9ca5f2d"
-              LastKnownName="Просмотр списка ролей"
-              LastKnownLocation="CompServiceUseCase.uml" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase
-        Id="d556feea-f651-4841-842a-4308954c8ac2"
-        name="Удаление/Изменеие роли"
-        isAbstract="false"
-        isLeaf="false">
-        <extendedCases>
-          <extend
-            Id="9c59beeb-5407-4419-bcf6-edfb5b8b5a22">
-            <useCaseMoniker
-              Id="aee51836-4df6-487d-a456-43bc7475c0d6"
-              LastKnownName="Просмотр конкретной роли"
-              LastKnownLocation="CompServiceUseCase.uml" />
-          </extend>
-        </extendedCases>
-      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
