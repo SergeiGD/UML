@@ -627,6 +627,86 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="5379fe6c-a016-45f1-bf7e-32f207673f2f"
+            name="GetOrders"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="01e10cda-b73e-486e-9ae4-d4326ce0cfa6"
+                  name="page"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4b4e4fa7-9716-4a6d-9fad-c05ec048e572"
+                  name="count"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="40e1857f-3c16-4d61-84b5-5eec69deab8a"
+                  name="filterA"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4256f795-28db-49f0-8022-8f48d9c63bbe"
+                      LastKnownName="Order"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08382444-c8cf-41dd-9757-cdfc7494a6b1"
+                  name="filterB"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4256f795-28db-49f0-8022-8f48d9c63bbe"
+                      LastKnownName="Order"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="acfa72ca-5945-4d32-8461-eb3f290341ca"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e191bb0c-ba43-4f6d-a57a-7e1165aa2389"
+                      LastKnownName="List&lt;Order&gt;"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1015,86 +1095,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation
-            Id="6e79043d-e970-4944-80ea-7398a9cadebf"
-            name="GetOrders"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="d475de7c-de3d-442c-810f-5e65bf25ec23"
-                  name="page"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
-                      LastKnownName="int"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="79cf454b-df5c-41b2-b2ff-8185134df1ee"
-                  name="count"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
-                      LastKnownName="int"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e0d7c3d5-0319-45e5-806c-4323c53044ee"
-                  name="filterA"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="4256f795-28db-49f0-8022-8f48d9c63bbe"
-                      LastKnownName="Order"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="119818ae-2b7a-466e-a5cd-c3cd500cd428"
-                  name="filterB"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="4256f795-28db-49f0-8022-8f48d9c63bbe"
-                      LastKnownName="Order"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="4465f203-33b8-4aff-a188-52771be4245a"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="e191bb0c-ba43-4f6d-a57a-7e1165aa2389"
-                      LastKnownName="List&lt;Order&gt;"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -1226,6 +1226,86 @@
                     <undefinedTypeMoniker
                       Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
                       LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cf8f99f4-9dfc-41ac-bd8a-62357ee7e68f"
+            name="GetServedOrders"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fe7f099b-9817-484d-b055-912bc13277af"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="e191bb0c-ba43-4f6d-a57a-7e1165aa2389"
+                      LastKnownName="List&lt;Order&gt;"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1c55fe82-2e89-472b-856c-adbb64b689c3"
+                  name="page"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9ab8928a-822d-41c9-9254-74157a8e4f3d"
+                  name="count"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6545720c-f662-4443-99cc-cdecba899f6c"
+                  name="filterA"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4256f795-28db-49f0-8022-8f48d9c63bbe"
+                      LastKnownName="Order"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5d32ebf5-6b85-47cd-9087-dc5e64827ca9"
+                  name="filterB"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4256f795-28db-49f0-8022-8f48d9c63bbe"
+                      LastKnownName="Order"
                       LastKnownLocation="CompServiceClassDiagram.uml" />
                   </type_NamedElement>
                 </parameter>

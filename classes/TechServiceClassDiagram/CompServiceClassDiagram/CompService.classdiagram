@@ -338,6 +338,51 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="6801b0c1-ea4c-4d40-af61-e02cb09f8269" name="GetOrders" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5379fe6c-a016-45f1-bf7e-32f207673f2f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2ff2a1f6-e278-455b-8be0-e8b1fbbc6132" name="page" direction="In" isUnique="false">
+                  <elementDefinition Id="01e10cda-b73e-486e-9ae4-d4326ce0cfa6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de578a74-cb65-4d29-833c-4c0b903c29db" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="455b8b92-41a0-4b84-b019-d25ad3b84859" name="count" direction="In" isUnique="false">
+                  <elementDefinition Id="4b4e4fa7-9716-4a6d-9fad-c05ec048e572" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de578a74-cb65-4d29-833c-4c0b903c29db" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ea8e7ab3-b387-4148-9dcc-43bfc90eeb93" name="filterA" direction="In" isUnique="false">
+                  <elementDefinition Id="40e1857f-3c16-4d61-84b5-5eec69deab8a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="96762167-dba8-4e84-a426-d4426c479168" LastKnownName="Order" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="62831638-6a69-472d-b450-45080d5c2d7c" name="filterB" direction="In" isUnique="false">
+                  <elementDefinition Id="08382444-c8cf-41dd-9757-cdfc7494a6b1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="96762167-dba8-4e84-a426-d4426c479168" LastKnownName="Order" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b7f54c2-4f2d-4a29-be38-15b9fa56aef0" direction="Return" isUnique="false">
+                  <elementDefinition Id="acfa72ca-5945-4d32-8461-eb3f290341ca" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1442db07-e3d8-4e3c-947e-806505dd7130" LastKnownName="List&lt;Order&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -529,51 +574,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="2f46869e-b829-49db-bc5b-b41ec629d386" name="GetOrders" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="6e79043d-e970-4944-80ea-7398a9cadebf" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="6d8017b5-ea98-4d66-9b6b-f1b33c2ce9ee" name="page" direction="In" isUnique="false">
-                  <elementDefinition Id="d475de7c-de3d-442c-810f-5e65bf25ec23" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="de578a74-cb65-4d29-833c-4c0b903c29db" LastKnownName="int" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="8cdc185d-8151-4fd0-97e4-43f5acb98b4c" name="count" direction="In" isUnique="false">
-                  <elementDefinition Id="79cf454b-df5c-41b2-b2ff-8185134df1ee" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="de578a74-cb65-4d29-833c-4c0b903c29db" LastKnownName="int" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="cdf89a3c-76d5-4907-abb8-da714136a702" name="filterA" direction="In" isUnique="false">
-                  <elementDefinition Id="e0d7c3d5-0319-45e5-806c-4323c53044ee" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="96762167-dba8-4e84-a426-d4426c479168" LastKnownName="Order" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="a5d909a4-0728-4714-a831-06c2861950bd" name="filterB" direction="In" isUnique="false">
-                  <elementDefinition Id="119818ae-2b7a-466e-a5cd-c3cd500cd428" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="96762167-dba8-4e84-a426-d4426c479168" LastKnownName="Order" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="72a5b7f6-3425-483d-ba38-6fadb5b89ffe" direction="Return" isUnique="false">
-                  <elementDefinition Id="4465f203-33b8-4aff-a188-52771be4245a" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="1442db07-e3d8-4e3c-947e-806505dd7130" LastKnownName="List&lt;Order&gt;" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -642,6 +642,51 @@
                   <elementDefinition Id="c6e39567-bc1d-4a64-80a6-25a597ccecd7" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="fc02d345-2801-4921-b9c5-4902b85b03fa" name="GetServedOrders" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf8f99f4-9dfc-41ac-bd8a-62357ee7e68f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dca3cd7e-3706-48e5-bed7-6924e9a75add" direction="Return" isUnique="false">
+                  <elementDefinition Id="fe7f099b-9817-484d-b055-912bc13277af" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1442db07-e3d8-4e3c-947e-806505dd7130" LastKnownName="List&lt;Order&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9513d518-71e5-426f-96c8-54e4ec12c7f8" name="page" direction="In" isUnique="false">
+                  <elementDefinition Id="1c55fe82-2e89-472b-856c-adbb64b689c3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de578a74-cb65-4d29-833c-4c0b903c29db" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fc0a81f2-b09e-441f-a324-94188c81f3b1" name="count" direction="In" isUnique="false">
+                  <elementDefinition Id="9ab8928a-822d-41c9-9254-74157a8e4f3d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de578a74-cb65-4d29-833c-4c0b903c29db" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4e986a81-be45-4b1a-a9cc-424efb3a707a" name="filterA" direction="In" isUnique="false">
+                  <elementDefinition Id="6545720c-f662-4443-99cc-cdecba899f6c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="96762167-dba8-4e84-a426-d4426c479168" LastKnownName="Order" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d26152c9-a69e-4a11-b073-5b35bc7b6287" name="filterB" direction="In" isUnique="false">
+                  <elementDefinition Id="5d32ebf5-6b85-47cd-9087-dc5e64827ca9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="96762167-dba8-4e84-a426-d4426c479168" LastKnownName="Order" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
