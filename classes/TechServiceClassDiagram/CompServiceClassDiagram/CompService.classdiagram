@@ -1217,7 +1217,7 @@
             <elementDefinition Id="f47b2794-f065-4eb9-9e78-96b42e98510c" />
           </association>
           <association Id="9676a2f3-735a-4990-a6fe-ee94819b55a6" isDerived="false" sourceEndRoleName="Order " targetEndRoleName="OrderSpareParts" isLeaf="false" isAbstract="false">
-            <classMoniker Id="570dca5d-1874-4528-9f87-6e7995eff1ce" LastKnownName="OrderSpareParts" />
+            <classMoniker Id="570dca5d-1874-4528-9f87-6e7995eff1ce" LastKnownName="OrderSparePart" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="63c85c34-ef7d-41b3-85e7-8ec7b99837b4" name="Order " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
@@ -1483,42 +1483,6 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="671cb94c-0ea8-4585-b0bb-817cabc5c67d" name="DelService" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a21e72fd-07e9-47ca-abd6-3b10e4cd1afc" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f6efed24-805d-4e77-92e5-622379bf07b9" direction="Return" isUnique="false">
-                  <elementDefinition Id="fecc5ab5-e1ad-4a40-bd07-ad424e5a96d7" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="f88547f0-c63e-4874-aeb8-9809583f985d" name="OrderServices" direction="In" isUnique="false">
-                  <elementDefinition Id="02f679d5-a9b0-4c8e-a4b6-c40edf816884" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="c83a1392-6570-41f9-a6b7-20ce5b79d215" name="AddService" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="21907ae6-603c-4278-a972-ec9bfae4b801" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="cdf56725-044d-4b1c-8757-0697050285ab" direction="Return" isUnique="false">
-                  <elementDefinition Id="dc0c2777-fce1-4c3b-8818-a29ff3b190e2" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="ff9fd32e-6211-4e70-96e6-bc83213e6d0e" name="OrderServices" direction="In" isUnique="false">
-                  <elementDefinition Id="f3073e93-77e7-407a-a519-f6e6adbe6f56" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
           <operation Id="ebe79685-b997-47b0-87bd-dfc3997413fa" name="GetServices" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="86be7a71-d13f-4c08-9818-0c8787a43ee6" />
             <ownedParameters>
@@ -1541,42 +1505,6 @@
                   <type_NamedElement>
                     <referencedTypeMoniker Id="d2569f2f-9059-40dc-90e8-41a6ea4616c4" LastKnownName="List&lt;OrderSpareParts&gt;" />
                   </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="b9f78dcd-38ec-494a-b28c-efded16c8859" name="AddSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="c7423983-6f5e-414b-bc57-7f52e2506f1f" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="ff1f6888-a372-4d8b-831b-7ee2554c6636" direction="Return" isUnique="false">
-                  <elementDefinition Id="b7095694-7318-4b8e-ac15-a1f6c16873e2" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="ff1947e2-ecc1-48dd-93cf-97d231074dac" name="OrderSpareParts" direction="In" isUnique="false">
-                  <elementDefinition Id="f179b39d-1321-46b9-a2fa-b4cdf239ca10" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="b4988fba-5ec3-4890-9baa-559937da8703" name="DelSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a8388c1b-59dc-456e-a0bb-c48b17fe5f80" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="8d5ef76a-49ab-4e42-8172-b1fed0e60207" direction="Return" isUnique="false">
-                  <elementDefinition Id="06f9c7c2-a6a2-49a8-897d-798e588336f0" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="3ee77260-c1c2-47ba-af87-06616160a464" name="OrderSpareParts" direction="In" isUnique="false">
-                  <elementDefinition Id="516e7818-e57a-414d-92e0-5589c6d9ec3c" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -4163,7 +4091,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="570dca5d-1874-4528-9f87-6e7995eff1ce" name="OrderSpareParts" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="570dca5d-1874-4528-9f87-6e7995eff1ce" name="OrderSparePart" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="e1defe16-18b3-498d-b93d-a4659b854e0f" />
         <targetEnds>
           <association Id="c1dacfe6-5820-438e-9510-e270ce180f17" isDerived="false" sourceEndRoleName="OrderSpareParts" targetEndRoleName="SparePart" isLeaf="false" isAbstract="false">
@@ -4200,6 +4128,12 @@
               <referencedTypeMoniker Id="c0f3eb32-ba23-48f7-942e-f7445270c288" LastKnownName="SparePart" />
             </type_NamedElement>
           </property>
+          <property Id="2b213d96-5aab-4cfa-b2ed-3e2fe7ddc3bb" name="Order" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b7de7e9a-79fa-4a24-88d8-929119f6a090" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="96762167-dba8-4e84-a426-d4426c479168" LastKnownName="Order" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="2bdfab9d-0ec0-4943-8b64-2555dc09766f" name="CalcFinalPrice" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -4224,6 +4158,11 @@
                   <type_NamedElement>
                     <referencedTypeMoniker Id="62e1c591-1fc8-4d49-889d-ba3d80faa959" LastKnownName="void" />
                   </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="989b8045-7c8c-432f-a874-a6a4d8274835" name="Order" direction="In" isUnique="false">
+                  <elementDefinition Id="f5ea61ae-7bb9-401a-99c6-e968d0bc6c5f" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -4322,6 +4261,45 @@
               <operationHasOwnedParameters>
                 <parameter Id="963f744a-d21a-4091-a9ff-961ab82767cc" name="Integer" direction="In" isUnique="false">
                   <elementDefinition Id="59c57706-402f-4489-9f8e-060014169634" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3411cb08-2f4f-4960-81b3-2ade2180dcb0" name="AddOrderSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1d484026-98d8-43b2-82e1-bfd982d89587" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="531ba776-27a7-4beb-bdee-416c603d116d" direction="Return" isUnique="false">
+                  <elementDefinition Id="43f25688-97fe-4428-9b2d-cac7da4ab246" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d0bb2d51-deab-4186-bf06-5491d6d67c4a" name="DelOrderSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="168276b4-3240-4b77-9d71-1fb358f02273" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="92e23871-4741-40bf-809a-a17ce8de2db2" direction="Return" isUnique="false">
+                  <elementDefinition Id="02886b39-8d37-430b-8ba1-3607228d4aa6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="06111a95-b3c3-45c0-9b84-269a5ec9530c" name="EditOrderSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f4eaa95e-aac3-47a2-8f3d-dea636b4eda1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2611c7bd-2dd5-4e55-890b-c0d7ed55948f" direction="Return" isUnique="false">
+                  <elementDefinition Id="1443c987-87ba-414c-a5e2-5c2ae8cefc67" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -4647,7 +4625,7 @@
             <elementDefinition Id="c6007af9-d1d3-42a6-afc6-d243416a7134" />
           </association>
           <association Id="0dfcb288-da9e-4571-9101-441c075119bb" isDerived="false" sourceEndRoleName="Batch" targetEndRoleName="BatchSpareParts" isLeaf="false" isAbstract="false">
-            <classMoniker Id="dc6a37e4-ac38-4e8a-952d-ab9fca780ff7" LastKnownName="BatchSpareParts" />
+            <classMoniker Id="dc6a37e4-ac38-4e8a-952d-ab9fca780ff7" LastKnownName="BatchSparePart" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="70652b9a-e5ce-4d3e-b399-1e0d5e261928" name="Batch" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
@@ -4789,48 +4767,12 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="3a22fdf5-ddff-4e7d-8596-dbafbd3ea405" name="AddSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="fba766e1-2756-4b0c-9a12-579514bcb510" />
+          <operation Id="9c5738b6-cf58-4964-8a0e-f42cc119a266" name="EditSpareParts" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dde753d3-284c-4ece-920d-ee577e80fadb" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="5779f633-817b-4d29-adec-fdc98a5c191b" direction="Return" isUnique="false">
-                  <elementDefinition Id="fefbc233-23ba-4b60-b753-12a50ce95767" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="55e994b8-6431-4680-92eb-00b26bd44644" name="BatchSpareParts" direction="In" isUnique="false">
-                  <elementDefinition Id="31e73d66-51a5-4ccd-adfd-2cd27aacb471" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="781290bd-572c-40bd-a09f-664d39c60531" name="DelSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="d3fb246e-c39c-476a-ac4e-ec27f35ec4cf" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="9112cfac-90ab-4d50-ae8c-ad7d4cd71b38" direction="Return" isUnique="false">
-                  <elementDefinition Id="75caf24f-cd3c-4e4b-8e2e-1cf393647d7b" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="fb3f75e2-de4e-45c7-b1e5-b5119020c3c7" name="BatchSpareParts" direction="In" isUnique="false">
-                  <elementDefinition Id="34574fe3-3796-477d-845a-be7b541da3c1" />
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="67b12c91-d1b0-46b8-b962-bd8d5123c9de" name="EditBatch" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="d2b87350-5d39-4c1a-8114-ce605f7912a6" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="505303a7-0b5e-4ac4-a295-9f945a29300e" direction="Return" isUnique="false">
-                  <elementDefinition Id="0d5dc328-eb96-491f-9d51-b677b8ad3248" />
+                <parameter Id="b88c98ea-157a-46a3-bb22-e0362ed39621" direction="Return" isUnique="false">
+                  <elementDefinition Id="4e8e85d6-3901-4fde-bb29-6392a84aa6bd" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
                   </type_NamedElement>
@@ -5879,7 +5821,7 @@
       </referencedType>
     </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="dc6a37e4-ac38-4e8a-952d-ab9fca780ff7" name="BatchSpareParts" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="dc6a37e4-ac38-4e8a-952d-ab9fca780ff7" name="BatchSparePart" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="bac14618-2f28-48e1-927a-8fb3423bec94" />
         <targetEnds>
           <association Id="9d9a345f-75d4-4cad-bb1a-90f92500bbe2" isDerived="false" sourceEndRoleName="BatchSpareParts" targetEndRoleName="SparePart" isLeaf="false" isAbstract="false">
@@ -5928,6 +5870,12 @@
               <referencedTypeMoniker Id="d0e2218a-5be7-46cf-97a2-091e3a6a80e0" LastKnownName="decimal" />
             </type_NamedElement>
           </property>
+          <property Id="c35f9dee-967b-4f01-bd7a-173fdb3396d7" name="Batch" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="28d049ef-c76e-4108-881f-7acf71698149" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a983ce7e-a30b-442b-8780-478ad8636aaf" LastKnownName="Batch" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="4c4200e7-d337-4149-9cf3-ad7b7825cc7a" name="BatchSpareParts" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -5941,14 +5889,45 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0dbeaf09-c113-4e2c-a8ed-c5b060755a65" name="Batch" direction="In" isUnique="false">
+                  <elementDefinition Id="9308fd8e-9784-4953-b52d-2fdbb9bdc38a" />
+                </parameter>
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="26b3255d-3f89-43cf-9510-a715ee1b641c" name="EditBatchSpareParts" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="5bcf58f4-2ffc-4806-a50e-9df1b4e113de" />
+          <operation Id="5901fab6-340b-4cfc-aade-9a9d4dc54f12" name="AddBatchSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="29a1d4f7-fa12-4031-8f27-f57a7912efbe" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="8bd1996c-73f7-4df1-8457-3b00de815249" direction="Return" isUnique="false">
-                  <elementDefinition Id="4a5655a6-aa03-4371-baad-157a98d1e92b" />
+                <parameter Id="73bc2450-a4de-4d4c-9699-c86d81a14be3" direction="Return" isUnique="false">
+                  <elementDefinition Id="a61e12e9-4a9f-4143-bea2-ae2422981e70" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="998a77c3-f80e-4716-a31c-1c10bcabedc6" name="DelBatchSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="aa53484b-116f-40c9-b720-00bfcee50e7f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2a262f90-2a5d-4667-b7a8-b415f9d99126" direction="Return" isUnique="false">
+                  <elementDefinition Id="09ca10bc-823a-456d-92d5-86aa68daca61" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cdae035a-0f10-419e-a260-b3aa7021c458" name="EditBatchSparePart" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5da9a08c-5d91-499f-a4d7-dee1653be26e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5b9a7a3e-260e-4dee-9de9-893b24050299" direction="Return" isUnique="false">
+                  <elementDefinition Id="ee12df51-cf71-4719-a58e-bc421ccff71e" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
                   </type_NamedElement>
@@ -6034,21 +6013,14 @@
               <referencedTypeMoniker Id="5655a02a-7ae5-4a44-9419-3de5361f9934" LastKnownName="double" />
             </type_NamedElement>
           </property>
+          <property Id="402b82f1-cc1f-4209-9d03-dc1eaf36a814" name="Order" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b53dac3a-49b7-437a-a0c2-bf429e05302d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="96762167-dba8-4e84-a426-d4426c479168" LastKnownName="Order" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="6a22b606-3bdc-4767-ae80-2a86ea32f6a4" name="EditOrderServices" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="f208fb8e-1435-44c9-b9ef-c3381b7691c4" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="7bf39127-43fd-46c4-bff0-209e44e7f0a4" direction="Return" isUnique="false">
-                  <elementDefinition Id="b273e863-556e-4476-841f-af647e2e99d1" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
           <operation Id="a8f8bcf3-3053-43cd-ac86-c798b625ea15" name="OrderServices" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="af138440-4c0b-4b1a-881b-fb654d5602b0" />
             <ownedParameters>
@@ -6057,6 +6029,50 @@
                   <elementDefinition Id="668dcb33-6e2b-4cf2-8d7c-8aaeaf160c2f" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="62e1c591-1fc8-4d49-889d-ba3d80faa959" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="47d715af-7af8-4bff-b26f-6b900d79e5eb" name="Order" direction="In" isUnique="false">
+                  <elementDefinition Id="dc15eb3a-27af-42ba-84f8-06dac3505de1" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="740bd17f-7960-430e-9ee6-8d8e95e6c814" name="AddOrderService" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3bc5199f-26cb-4ef0-be6d-f3887b8fa6c3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="af4ecf58-b951-45b1-900d-9c735cc00911" direction="Return" isUnique="false">
+                  <elementDefinition Id="69cd878b-c518-44da-a789-5130a4c6524a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="5271f703-4a8b-4648-9be4-8d1299192c37" name="DelOrderService" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f118f6aa-6b66-478b-b241-5ef45f8f4043" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="45266e90-5571-4c2d-be5a-d5faa3caa701" direction="Return" isUnique="false">
+                  <elementDefinition Id="31969603-8f1e-4915-a2e9-314cf73c9ef7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="eb03efde-80f9-4074-b5fb-85d69f614d28" name="EditOrderService" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ba76d859-75a2-4f87-b452-4eba7022c96d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a82baa66-7152-4748-8c0c-9d06dfafe71e" direction="Return" isUnique="false">
+                  <elementDefinition Id="0384699c-0ae3-4ce4-97e1-b2ef3a2f5d65" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
