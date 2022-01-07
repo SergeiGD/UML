@@ -2,7 +2,7 @@
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c956eba1-3520-4eef-998f-a18a90565246" name="CompService" linkedPackageId="e59eb041-9160-4397-9c22-6082c74ee9b6" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
-      <actor Id="af7868ea-bcd2-45ba-9d9e-d37ef86117fc" name="Администратор" isAbstract="false" isLeaf="false">
+      <actor Id="af7868ea-bcd2-45ba-9d9e-d37ef86117fc" name="Управляющий" isAbstract="false" isLeaf="false">
         <elementDefinition Id="3a3d75a9-961f-43b1-9a4d-40dc20692464" />
         <generalsInternal>
           <generalization Id="c0c383b1-77bb-4528-b89a-02e523516653" isSubstitutable="false">
@@ -109,22 +109,6 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="d9a51dfe-7bbf-4e7e-bde9-bb014ed17489" />
           </association>
-          <association Id="e1022028-d421-4292-9956-e7b13f226e07" isDerived="false" sourceEndRoleName="Мастер" targetEndRoleName="Просмотр списка техники" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="192c897c-65e7-4ae0-8d70-6cbecbd5bd3d" LastKnownName="Просмотр списка техники" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="24c4096d-a1f8-431d-a9e8-5e88eb47939a" name="Мастер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="9d320ce4-0ff2-47ed-8751-39d8bb20f8cf" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6f253436-24ba-419c-9d52-8ea172895cc6" name="Просмотр списка техники" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="319beed8-6670-409b-a8f3-503ef463ee9c" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="99b3206e-0215-43ba-adc1-d87f3fc66e73" />
-          </association>
           <association Id="31ee2efc-416d-4cff-b1df-4e38155c4193" isDerived="false" sourceEndRoleName="Мастер" targetEndRoleName="Просмотр списка задач" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="0c5f4f57-294a-4def-8468-017aa528bb27" LastKnownName="Просмотр списка визитов" />
             <relationshipOwnedElementsInternal>
@@ -204,6 +188,86 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="6eee3bf2-eac5-40b9-b3a7-a0436fb81c9b" />
+          </association>
+          <association Id="100396b5-39bf-4d91-9ae9-5cd1af95f42b" isDerived="false" sourceEndRoleName="Мастер" targetEndRoleName="Просмотр списка категорий " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9cc3c7be-e43f-409e-9e7c-6c2e4cac7781" LastKnownName="Просмотр списка категорий " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3cf24f93-4a1e-4d60-86e0-d5703e3f78d0" name="Мастер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d8741ab8-4cb4-4740-9e36-86c0f1c6686f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8e1aec3b-8d2d-40d3-858f-3763753694f6" name="Просмотр списка категорий " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="591d4e0c-aef4-4c8c-88c1-f1eb375978fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ac302132-2785-44ef-ab3e-213cb3e19493" />
+          </association>
+          <association Id="71e7eeca-f4a2-4279-95a6-21d5c1446482" isDerived="false" sourceEndRoleName="Мастер" targetEndRoleName="Просмотр списка клиентов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="75232820-5b07-4ab6-baae-5f766536a61f" LastKnownName="Просмотр списка клиентов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="425b36a7-fd32-40e3-a8f4-6450e62f0be5" name="Мастер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1b877ed5-d7f2-4528-b9f0-159e841a9e94" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6c4a1bb-9cb2-4fe6-9620-eaba3bb71b2d" name="Просмотр списка клиентов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fb6f1055-db6e-480d-911a-4cb1d5d67b26" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="66293165-727a-4a5b-9add-b2999bddd4bb" />
+          </association>
+          <association Id="5b5bf07e-c28b-48ce-a4e1-5418712b365b" isDerived="false" sourceEndRoleName="Мастер" targetEndRoleName="Просмотр списка техники" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="697c8db2-c3b0-42fd-848d-3fb31f8c6117" LastKnownName="Просмотр списка техники" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94f96033-2a7f-4332-a3ed-1b2c55a1400c" name="Мастер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="77de46f9-eec2-4d35-8102-4cec0807146b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1eb844d8-1e04-4c74-97d0-9c1c0c012cbe" name="Просмотр списка техники" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2e8e4725-3295-409a-8500-9d099592b601" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="005877d1-cf81-4e2a-8faf-75c49a843de7" />
+          </association>
+          <association Id="b2fee96b-b83b-4f73-84ac-0e5226a249ef" isDerived="false" sourceEndRoleName="Мастер" targetEndRoleName="Просмотр списка клиентов" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5004808e-1fae-4370-9e5e-bf510e719e51" LastKnownName="Просмотр списка клиентов" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="04038399-6fae-4f12-b57a-67bbb9e1baaa" name="Мастер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ff5989ff-885c-4990-9d89-bb69b6cac998" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ec377ce-7dd8-4f92-90eb-05555d1fb8b5" name="Просмотр списка клиентов" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="78c8f90f-b70d-4b7d-9003-14ae60f9e935" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6955acf7-8e07-4983-8b74-bb09dbd81aef" />
+          </association>
+          <association Id="85f83a5e-406b-4293-b8a1-8ecfb56c454c" isDerived="false" sourceEndRoleName="Мастер" targetEndRoleName="Просмотр списка мастерских1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="bbe5e663-7377-4ad3-b0b2-ce530bd47c62" LastKnownName="Просмотр списка мастерских" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fbad9890-c745-4c87-93d8-fb2d90f076c9" name="Мастер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d06294fa-e109-4baf-bfcf-58cf286cc8a8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4ef231a6-7a15-4fa4-a327-28013d941417" name="Просмотр списка мастерских1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="563f31a7-ecd4-463d-b2e5-590510a31e69" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8df5f765-60e3-4e45-a55e-c0c524bd69e2" />
           </association>
         </targetEnds>
       </actor>
@@ -291,21 +355,21 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="e42117b5-5af2-4674-9415-5ede5e7980c3" />
           </association>
-          <association Id="3b8f2006-9417-4d07-af28-0be601e25dfb" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка категорий " isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="9cc3c7be-e43f-409e-9e7c-6c2e4cac7781" LastKnownName="Просмотр списка категорий " />
+          <association Id="e52e846f-9c96-4513-8ec2-9e9688ca51b1" isDerived="false" sourceEndRoleName="Менеджер" targetEndRoleName="Просмотр списка техники" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="192c897c-65e7-4ae0-8d70-6cbecbd5bd3d" LastKnownName="Просмотр списка техники" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="b4f0ba2c-b501-4caf-8530-1abe5ca7247f" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="18c720d1-8953-4db7-ad80-a341322b1387" />
+                <memberEnd Id="53c4a8a2-318d-4ffd-a0bb-6bf7b0e0c2bc" name="Менеджер" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9c65c0fc-5cc6-4a75-a0f5-c889c7989cb7" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="cad4805a-1b96-4a83-a686-5809c0f2b81c" name="Просмотр списка категорий " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="fef048f5-74c0-4718-9f42-c2ada9ab30a1" />
+                <memberEnd Id="c1378707-3c92-4817-a00e-604210416cf0" name="Просмотр списка техники" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aa6d7104-c840-4cea-bff4-aaf422b96327" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="91803730-3cfe-4c9f-8fe1-2eae31f74862" />
+            <elementDefinition Id="25d475cf-dbad-478a-9a8a-e446d6f24b2a" />
           </association>
         </targetEnds>
       </actor>
@@ -313,6 +377,12 @@
     <useCaseModelRootHasTypes>
       <useCase Id="75232820-5b07-4ab6-baae-5f766536a61f" name="Просмотр списка клиентов" isAbstract="false" isLeaf="false">
         <elementDefinition Id="4bd229f7-99fc-4ac2-9681-86564739d321" />
+        <generalsInternal>
+          <generalization Id="4901de7d-c419-4126-b13d-23f3c74e4d28" isSubstitutable="false">
+            <useCaseMoniker Id="5004808e-1fae-4370-9e5e-bf510e719e51" LastKnownName="Просмотр списка клиентов" />
+            <elementDefinition Id="6cb7300e-f33a-42b9-b9b8-02cdf65f4aca" />
+          </generalization>
+        </generalsInternal>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -348,6 +418,12 @@
     <useCaseModelRootHasTypes>
       <useCase Id="192c897c-65e7-4ae0-8d70-6cbecbd5bd3d" name="Просмотр списка техники" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5afbcba9-dae9-4844-ae54-b5ee0882ff0c" />
+        <generalsInternal>
+          <generalization Id="38c179d9-fb81-4000-8c24-1c8370519a1b" isSubstitutable="false">
+            <useCaseMoniker Id="697c8db2-c3b0-42fd-848d-3fb31f8c6117" LastKnownName="Просмотр списка техники" />
+            <elementDefinition Id="661b9134-7ffb-4223-92f8-e75566f051a4" />
+          </generalization>
+        </generalsInternal>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -522,6 +598,10 @@
           <generalization Id="346a4090-8809-4324-85ad-3d414cde0134" isSubstitutable="false">
             <useCaseMoniker Id="b5b80577-3739-434d-b623-a0d69da26471" LastKnownName="Просмотр списка мастерских" />
             <elementDefinition Id="0a361f57-4b31-43d5-a965-6a9422e9114d" />
+          </generalization>
+          <generalization Id="77fc48c9-d7ec-4448-9a52-29cea43a6450" isSubstitutable="false">
+            <useCaseMoniker Id="bbe5e663-7377-4ad3-b0b2-ce530bd47c62" LastKnownName="Просмотр списка мастерских" />
+            <elementDefinition Id="cbeb3714-c800-452f-8271-a8537c710d6e" />
           </generalization>
         </generalsInternal>
       </useCase>
@@ -1043,6 +1123,21 @@
             <elementDefinition Id="5edd85bb-f532-4b93-bd9f-7fb919dfaf4b" />
           </extend>
         </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="697c8db2-c3b0-42fd-848d-3fb31f8c6117" name="Просмотр списка техники" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cbbb9b52-4f59-4727-83b4-8425da1c828b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5004808e-1fae-4370-9e5e-bf510e719e51" name="Просмотр списка клиентов" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bd9cbf4f-656b-46e5-9a33-225fd96df7b6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bbe5e663-7377-4ad3-b0b2-ce530bd47c62" name="Просмотр списка мастерских" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="41514b0a-280f-481d-97c2-177e2291327a" />
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>
