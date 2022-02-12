@@ -407,6 +407,10 @@
             <useCaseMoniker Id="ff501f19-59ac-41ee-9bd6-1b2c7b12edc0" LastKnownName="Просмотр списка деталей" />
             <elementDefinition Id="a56def11-f25f-496e-a3ce-9f164bd6754e" />
           </include>
+          <include Id="232c9c80-872e-409e-9095-06bc1eb1ed54">
+            <useCaseMoniker Id="0c95d844-1859-4b6f-a6e7-b217d9d49466" LastKnownName="Просмотр списка мастерских" />
+            <elementDefinition Id="83493a6d-1fd3-4fc0-9c5d-bc6f717b8f6e" />
+          </include>
         </additions>
       </useCase>
     </useCaseModelRootHasTypes>
@@ -522,6 +526,10 @@
           <include Id="60795007-19e3-4744-a502-867cd94926b0">
             <useCaseMoniker Id="9cc3c7be-e43f-409e-9e7c-6c2e4cac7781" LastKnownName="Просмотр списка категорий " />
             <elementDefinition Id="c75a15a6-860d-4fa7-86ff-3976081f3a13" />
+          </include>
+          <include Id="fab798fb-3e35-400f-934c-a2e550e2e5eb">
+            <useCaseMoniker Id="75232820-5b07-4ab6-baae-5f766536a61f" LastKnownName="Просмотр списка клиентов" />
+            <elementDefinition Id="367c413c-c461-4337-9c43-bbb4b5d911ad" />
           </include>
         </additions>
       </useCase>
@@ -648,6 +656,32 @@
             <elementDefinition Id="e77cab45-83f3-4863-bdfb-e21a3d22240d" />
           </extend>
         </extendedCases>
+        <additions>
+          <include Id="ccde2551-95eb-4f70-b399-5b97745872f6">
+            <useCaseMoniker Id="75232820-5b07-4ab6-baae-5f766536a61f" LastKnownName="Просмотр списка клиентов" />
+            <elementDefinition Id="9f3a6b9f-07b8-4053-b467-55bfa86e9587" />
+          </include>
+          <include Id="708c5e2a-e66c-494e-b813-14b835da7f74">
+            <useCaseMoniker Id="0c95d844-1859-4b6f-a6e7-b217d9d49466" LastKnownName="Просмотр списка мастерских" />
+            <elementDefinition Id="b5617bef-6550-4e7c-8f00-0baf52e10bb5" />
+          </include>
+          <include Id="e9117d64-61d3-4fc0-9872-7bd90b6c15b3">
+            <useCaseMoniker Id="d915e3aa-2cb0-4457-94b1-8d6856663411" LastKnownName="Просмотр списка сотрудников" />
+            <elementDefinition Id="e7c81c0b-f343-4929-a758-e69f04587e67" />
+          </include>
+          <include Id="281691d4-886a-4bad-8405-a4882a51f92c">
+            <useCaseMoniker Id="192c897c-65e7-4ae0-8d70-6cbecbd5bd3d" LastKnownName="Просмотр списка техники" />
+            <elementDefinition Id="00858b19-a4db-434a-a4bb-d40faecb8048" />
+          </include>
+          <include Id="2784f3c5-4091-4ae3-a2bc-6da37fcfaa8e">
+            <useCaseMoniker Id="fa163910-740d-41dd-a1f1-e316f2437721" LastKnownName="Просмотр списка услуг" />
+            <elementDefinition Id="8bd5caaf-201f-40b8-85c4-19126199ee89" />
+          </include>
+          <include Id="fcbfff0c-d5f1-4636-8881-42f3a2611e18">
+            <useCaseMoniker Id="ff501f19-59ac-41ee-9bd6-1b2c7b12edc0" LastKnownName="Просмотр списка деталей" />
+            <elementDefinition Id="e832cc83-3f14-4684-a745-d7bc01a35285" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -684,7 +718,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="6b98d13b-9b96-4edf-a2ef-47f5f1a6cd0c" name="Удаление (отмена) заказа" isAbstract="false" isLeaf="false">
+      <useCase Id="6b98d13b-9b96-4edf-a2ef-47f5f1a6cd0c" name="Отмена заказа" isAbstract="false" isLeaf="false">
         <elementDefinition Id="db36ad59-fcee-4322-9f9d-13f155faa352" />
         <extendedCases>
           <extend Id="fce40e8f-f8f4-4e59-be59-b7dc68dca7ab">
@@ -779,17 +813,6 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="b698bba1-fffb-4ae3-aea2-4faaf72af3a9" name="Добавить новый заказ" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="12b9c7bc-a4aa-4a89-8087-2731f5b1043b" />
-        <extendedCases>
-          <extend Id="30ed2bb8-20bd-472d-89ab-bb8118068509">
-            <useCaseMoniker Id="fad1447d-be01-4fa4-bf94-b3b8ab9a1437" LastKnownName="Просмотр конкретного клиента" />
-            <elementDefinition Id="779123a8-9ec3-4c70-94d8-9d98a88481ac" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
       <useCase Id="d2bcca51-2609-4060-89ae-d87c8710a361" name="Просмотр списка заказов клиента" isAbstract="false" isLeaf="false">
         <elementDefinition Id="b9792451-87be-4880-86ae-627c1f6ea6c3" />
         <extendedCases>
@@ -841,7 +864,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f4788e99-3f15-44a2-90ab-6347e642cf6d" name="Добавить менеджера" isAbstract="false" isLeaf="false">
+      <useCase Id="f4788e99-3f15-44a2-90ab-6347e642cf6d" name="Добавление менеджера" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f7503cd5-7786-4f74-8bc9-def8c474a896" />
         <extendedCases>
           <extend Id="6a8dcfa2-7f8e-48fe-91db-3081917411ee">
@@ -1003,6 +1026,12 @@
             <elementDefinition Id="189d5512-84d6-4236-abb2-05a62bb79dcf" />
           </extend>
         </extendedCases>
+        <additions>
+          <include Id="29e90e7b-c26e-477a-a438-2e02a306636b">
+            <useCaseMoniker Id="ff501f19-59ac-41ee-9bd6-1b2c7b12edc0" LastKnownName="Просмотр списка деталей" />
+            <elementDefinition Id="af697c09-3efd-48a5-aa74-54b4eab0eacb" />
+          </include>
+        </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -1066,23 +1095,6 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f5632b4c-6ddb-460c-967a-924fb6da3e9f" name="Заказ деталей этого типа" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="ec38451c-526b-4616-9025-443c466fe6fc" />
-        <extendedCases>
-          <extend Id="f08ec7ae-3b6b-4689-aaa6-1f9b452f5d41">
-            <useCaseMoniker Id="3d77645d-7e8f-44cd-ab18-b90b52ca9f30" LastKnownName="Просмотр конкретной детали" />
-            <elementDefinition Id="598dd15b-f18a-46be-a9cf-33531d9faa47" />
-          </extend>
-        </extendedCases>
-        <additions>
-          <include Id="3c5cd3e5-32b6-4b73-a169-3db895d2ba4b">
-            <useCaseMoniker Id="512276a5-97ae-464c-9624-a7c771337cbe" LastKnownName="Добавление поставки" />
-            <elementDefinition Id="5cca6837-0a11-4150-a97b-c49693269ceb" />
-          </include>
-        </additions>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
       <useCase Id="b5b80577-3739-434d-b623-a0d69da26471" name="Просмотр списка мастерских" isAbstract="false" isLeaf="false">
         <elementDefinition Id="00cc39ea-0d4f-40d4-8d45-a5c5a5772b6b" />
       </useCase>
@@ -1138,6 +1150,39 @@
     <useCaseModelRootHasTypes>
       <useCase Id="bbe5e663-7377-4ad3-b0b2-ce530bd47c62" name="Просмотр списка мастерских" isAbstract="false" isLeaf="false">
         <elementDefinition Id="41514b0a-280f-481d-97c2-177e2291327a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="41f9953c-e40c-4201-b50a-e5df9a06eb31" name="Просмотр конкретной роли" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5921867d-8843-4619-9674-2074b057222b" />
+        <extendedCases>
+          <extend Id="9f74eacb-43bf-4a45-bd42-4e22d0448f83">
+            <useCaseMoniker Id="ee61473c-566e-449d-9d3f-8b2ac79f71ad" LastKnownName="Просмотр списка ролей" />
+            <elementDefinition Id="d1ae50ab-d236-42bf-bebf-be3bb1722527" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b30b2ccf-2bc0-4544-af42-8cff645f5250" name="Удаление роли / Изменение роли" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="871fba6c-0cb8-4de1-bc6d-693fe6e2425e" />
+        <extendedCases>
+          <extend Id="afe42e1f-e5b7-43ee-8885-f35976dd8ef4">
+            <useCaseMoniker Id="41f9953c-e40c-4201-b50a-e5df9a06eb31" LastKnownName="Просмотр конкретной роли" />
+            <elementDefinition Id="107f0397-f018-4db9-a942-b5cbe4de0296" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="95b0b2ec-b01d-4da4-bd1b-43855f058331" name="Добавление роли" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4019464b-2132-4b94-8460-d81e66a0390b" />
+        <extendedCases>
+          <extend Id="b1424dc2-0d4c-4346-bf2c-cfb0fff57951">
+            <useCaseMoniker Id="ee61473c-566e-449d-9d3f-8b2ac79f71ad" LastKnownName="Просмотр списка ролей" />
+            <elementDefinition Id="ba28a563-6e9f-4379-b256-6df570d93942" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>

@@ -624,58 +624,6 @@
         </generalsInternal>
         <targetEnds>
           <association
-            Id="24f167f3-6bd2-4a7b-aaf6-934189540296"
-            isDerived="false"
-            sourceEndRoleName="Employee "
-            targetEndRoleName="EmplyeeTimetable"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="7268a3af-922c-4d5b-a474-3c90ebcb4600"
-              LastKnownName="EmplyeeTimetable"
-              LastKnownLocation="CompServiceClassDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f6f5d9ad-a1e1-41c6-b2da-edce0fac2acd"
-                  name="Employee "
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="16c8f2b4-d533-43c5-beb2-5aeb6ec9b2d5"
-                  name="EmplyeeTimetable"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="5c219273-5626-4f40-95c6-a8bf052efd2d"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="14e84e7a-74b3-4968-9ffd-019d096285bd"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="daf5b45f-c96b-48ef-a8c5-43008570634b"
             isDerived="false"
             sourceEndRoleName="Employee "
@@ -728,7 +676,7 @@
                     <literalString
                       Id="9cdcedc5-5aef-4759-b9b8-b0d87a0bf842"
                       name="Lower"
-                      value="0" />
+                      value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
@@ -741,9 +689,9 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="0c54316a-c790-4375-aecf-051b7292c524"
+            Id="0702063c-4bf0-455c-aa56-e8c29d4e29a6"
             isDerived="false"
-            sourceEndRoleName="Employee"
+            sourceEndRoleName="Employee "
             targetEndRoleName="Role"
             isLeaf="false"
             isAbstract="false">
@@ -754,25 +702,25 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="c8f328d5-7aa0-46d6-9b5a-78557ff87b95"
-                  name="Employee"
+                  Id="9aea790f-4de0-41d3-b34d-fa23b3e9f001"
+                  name="Employee "
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="9e35af4e-9a6d-46ce-8f81-067a6dd212da"
+                      Id="5704f2bb-7ddf-4a10-8b00-f22347a9dc6b"
                       name="Lower"
                       value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="1467145f-3466-4378-85a1-9cc677841bdb"
+                      Id="e57518cb-2fa7-4433-9afc-a38c4c28c706"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -780,7 +728,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="b4106662-f921-4969-88a2-04efcee64a5b"
+                  Id="f4afb6e1-319f-4887-9966-932471195f73"
                   name="Role"
                   isLeaf="false"
                   isStatic="false"
@@ -788,7 +736,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true" />
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -2015,6 +1963,58 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="0eee3466-919d-40d3-acc0-a903f247a95a"
+            name="CountInOrders"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="62f7f608-42e0-47e8-9c5a-ea8d82942d75"
+                  name="from"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="42896087-0971-43c1-982b-06af3ffb8565"
+                      LastKnownName="Datetime"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="10169865-3f9f-4090-8d9e-2ca4f06ea214"
+                  name="until"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6f1e3583-6453-46eb-9e38-2685f90d378f"
+                      LastKnownName="DateTime"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63963da1-88a7-481a-a45b-68a7b698bb18"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2026,58 +2026,6 @@
         isLeaf="false"
         isActiveClass="false">
         <targetEnds>
-          <association
-            Id="06722aa2-2373-40e9-a41f-b5f7ffa58d49"
-            isDerived="false"
-            sourceEndRoleName="Order"
-            targetEndRoleName="Product"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="57480d6f-b872-4e75-b996-e8207e616f49"
-              LastKnownName="Product"
-              LastKnownLocation="CompServiceClassDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ec0f69ab-5bb1-46ad-98b8-d1d32ff87337"
-                  name="Order"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="9cf0d528-2330-4b9e-8561-3a3ec65f63b5"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="cd8c91cd-86b0-4ccf-8292-33aaf9be472c"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="65e01c2c-fbec-46b3-9f0e-b164f17b4c32"
-                  name="Product"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
           <association
             Id="804c733e-a2a7-4a6a-a1f8-6081119b9f65"
             isDerived="false"
@@ -2179,71 +2127,6 @@
                   isDerivedUnion="false"
                   aggregation="None"
                   isComposite="true" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="eeeb036d-251d-4d5a-be41-fc78f73b66ac"
-            isDerived="false"
-            sourceEndRoleName="Order "
-            targetEndRoleName="OrderSpareParts"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="e1defe16-18b3-498d-b93d-a4659b854e0f"
-              LastKnownName="OrderSparePart"
-              LastKnownLocation="CompServiceClassDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="23164ee6-fc67-4ff8-b4cb-9b4a4a33e499"
-                  name="Order "
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="26d3b8c5-2811-404d-b1ab-edad347b5c54"
-                      name="Lower"
-                      value="0" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="6217697f-a7ba-4768-a37f-b48ed1655178"
-                      name="Upper"
-                      value="1" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="db9d11d6-782d-4f3b-b323-c7b6efdf9928"
-                  name="OrderSpareParts"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="9c767dbc-5df6-47b5-922c-b50741e1ff77"
-                      name="Lower"
-                      value="0" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="8c7e1ae5-f394-4682-b911-25a779e2f09d"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -2413,6 +2296,58 @@
                       value="*" />
                   </upperValueInternal>
                 </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d2b54529-e606-45e4-a323-ff7ee7698003"
+            isDerived="false"
+            sourceEndRoleName="Order"
+            targetEndRoleName="Product"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="57480d6f-b872-4e75-b996-e8207e616f49"
+              LastKnownName="Product"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3cb33913-926d-41d3-ba59-326a86b12968"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="32bfd94f-00f8-4f00-a7e6-59f5b5276317"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9c7bb56f-4419-40a2-9ace-dd34361a86e8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea423272-3473-4dcc-b853-c75743c18a60"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -2826,6 +2761,20 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c3ae05e-ba54-48cc-963e-ca549337c124"
+                  name="onlyUnfinished"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
           <operation
@@ -2878,7 +2827,7 @@
           </operation>
           <operation
             Id="ee121927-bede-4d4a-a29f-d980cff15f9c"
-            name="CheckPartsInStock"
+            name="CheckPartsDelivered"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -3158,6 +3107,316 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="a4407ac4-00f7-4c02-9983-9b6bc8012a89"
+            name="CheckServicesDone"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="de34d298-3b21-4e43-a92d-d35fb2a3806c"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="07a6a184-f7e8-49a2-8901-aa9429c7424d"
+            name="GetService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5e7b5a91-b326-41c2-9901-a6324e53bf75"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a83edafe-3de3-45b6-856a-d388b4dc4dea"
+                      LastKnownName="OrderService"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="08327bd3-4d27-45f5-b5f7-34c8a283d816"
+                  name="id"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6287b06f-5bf7-4d2a-8a89-e42a57db5ec2"
+            name="GetSparePart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="be33d6f8-5235-48c1-be3f-9b9676c1d39d"
+                  name="id"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e91f77e5-c552-4277-806b-1e41756793fe"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e1defe16-18b3-498d-b93d-a4659b854e0f"
+                      LastKnownName="OrderSparePart"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="959c7474-a3fb-45bf-86d2-353a4a2706cc"
+            name="CalcServicesCount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8b8d8671-4289-448e-8bf2-851406a73f8a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8c468e02-ec77-441f-a739-c31825313156"
+            name="CheckService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="71e5180f-4a1b-4c8f-9b9f-614687526fb5"
+                  name="service"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b0c4b702-5e5a-4e3c-8cd4-918150c7b380"
+                      LastKnownName="Service"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8bef972b-5bd7-4fcc-9fac-f9434191217e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1467a6b5-62b6-43f8-a933-6be99809a1ec"
+            name="CheckSparePart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="35eadb7f-b526-4a3a-8a76-247d464d926a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e35da8b3-e401-4680-8c0b-dc8811a44417"
+                  name="sparePart"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3113cd22-0eb7-43e8-bafb-033a4008083a"
+                      LastKnownName="SparePart"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9882e88a-af78-41d1-a4dc-f92d76e9b146"
+            name="CalcSparePartsCount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1993c8a-124a-4b86-bdca-2123104fbd31"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ddc6f3b8-a5e3-4d0c-b470-9500a93be1dc"
+            name="CalcSparePartsPrice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5bba44f2-49c7-4ed2-ae4f-2780ee9717ed"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bb3d1d49-bf88-4270-b5ad-3f1901f7c1e5"
+                      LastKnownName="decimal"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7fd0bdf3-1084-43e3-86ed-c9f19c238b5e"
+            name="CalcClientPrepayment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a1d9697-8191-44dd-bee8-963cdcc9df90"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bb3d1d49-bf88-4270-b5ad-3f1901f7c1e5"
+                      LastKnownName="decimal"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b0f7edd2-3e83-48a0-a78c-30f3c77a6c80"
+            name="GetOrderLog"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="287177c4-b8a9-43ef-9423-32b5313b5d78"
+                  name="id"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="40b7fa49-a9ab-4008-bbd7-479a0bc098e2"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6eb389a0-4e49-42c5-b0aa-cd5e601c2cc7"
+                      LastKnownName="OrderLog"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -3169,58 +3428,6 @@
         isLeaf="false"
         isActiveClass="false">
         <targetEnds>
-          <association
-            Id="72b398e1-844f-44dc-a694-b56a1b35aa34"
-            isDerived="false"
-            sourceEndRoleName="Workshop"
-            targetEndRoleName="WorkshopTimetable"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="279a0b71-1c89-4994-9718-501b4c8b1447"
-              LastKnownName="WorkshopTimetable"
-              LastKnownLocation="CompServiceClassDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="5ebaca7b-6cc3-464d-b25a-b5e8e38b6c13"
-                  name="Workshop"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ad8eee55-6cda-4897-978d-859979d3c0d5"
-                  name="WorkshopTimetable"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="d5a1bcb3-04df-40cc-b443-415cc3397eb0"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="5d2d4642-f2ca-4683-9909-307b4f9b4df2"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
           <association
             Id="835da845-011f-4c7d-a035-e011e1fc4508"
             isDerived="false"
@@ -3326,6 +3533,24 @@
               <undefinedTypeMoniker
                 Id="6f1e3583-6453-46eb-9e38-2685f90d378f"
                 LastKnownName="DateTime"
+                LastKnownLocation="CompServiceClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4e8c9828-4e62-4e73-a80f-c7f7960aa7b8"
+            name="PhoneNum"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
                 LastKnownLocation="CompServiceClassDiagram.uml" />
             </type_NamedElement>
           </property>
@@ -4010,7 +4235,7 @@
         <ownedOperationsInternal>
           <operation
             Id="81c6ae8c-bbbb-47df-813d-79b8ea6dcbe2"
-            name="GetClients"
+            name="GetCManagers"
             isLeaf="false"
             isStatic="true"
             isAbstract="false"
@@ -4032,36 +4257,8 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c3801ca9-3568-444f-a08f-d87b98195ebb"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="1957feed-5db5-478a-aba4-4021723455d3"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e8cb05e2-0c5d-4512-bc25-691c41a349a6"
-                  name="filterA"
+                  Id="970b0706-55c0-46b3-a070-1ce2ff8a0ac6"
+                  name="ilterA"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -4074,7 +4271,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b744c100-0350-413d-a87f-28c34850f6bb"
+                  Id="b48cb1e2-d1d8-4432-9b99-7c96cea38711"
                   name="filterB"
                   direction="In"
                   isUnique="false">
@@ -4088,8 +4285,36 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b671c512-d279-42f6-a4bc-8b3e67ea3c66"
-                  name="count"
+                  Id="8c146c60-08ea-4fbc-988a-fc8cc4597613"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4cd75726-57f9-4df5-939f-8789a6d33a6f"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cd76dd9c-e2b9-4d01-baab-9e23aab9fa04"
+                  name="fcount"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -4102,7 +4327,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="2489726e-b18c-4970-8c33-0cb983c8d655"
+                  Id="d54520fb-1c9f-4f66-b132-c9d2ce2a7227"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -4236,35 +4461,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="be39e692-52bf-440c-88a1-7a9653255b51"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="93b12d86-3abb-4ee1-ac2d-c9903d542348"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="fc72849b-3f8f-4f5d-b638-f6095ac5324f"
+                  Id="98dd6689-2d1d-4d44-92a0-71d2fded6a7e"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -4278,7 +4475,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b1ea79a9-b51d-41fe-a1ea-6ec9268fe09b"
+                  Id="9b768d8d-125a-4b25-ab27-750c6e68ae94"
                   name="filterB"
                   direction="In"
                   isUnique="false">
@@ -4292,7 +4489,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="5341f261-7bbd-4dac-8435-60abf8755d70"
+                  Id="af993d55-71ae-497a-8aa6-a913cf427687"
                   name="masterCat"
                   direction="In"
                   isUnique="false">
@@ -4306,7 +4503,49 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="4f75e4fc-8074-431d-a230-44a248bb36ad"
+                  Id="3cfc9284-df4b-45f6-8db6-392e6e10fa1d"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6b81d275-ddef-4f1f-b63c-a21849844a66"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e2b9ad56-ae44-4ad7-ad1f-f391e987de46"
+                  name="masterCat"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="727e2bd1-9ffe-4f58-a321-0a671237657e"
+                      LastKnownName="Category"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2fcce7ed-9e03-45c0-9066-d4f1af49bdee"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -4320,7 +4559,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="cd084a79-2437-42fa-be1f-4f57decf7a9a"
+                  Id="fc92e907-e449-48c2-be66-46e7de1931f0"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -4459,35 +4698,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="a53cae89-cdc2-4bb4-8c65-5ca2b90e778a"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0aba146e-91e7-4986-a5ad-cc666d21f97d"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="c7cf57d5-8218-44e1-81a5-ceaf5de1d36d"
+                  Id="93a12017-ef8c-4703-ba4d-b85896cde7a8"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -4501,7 +4712,35 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="5020ab47-a31e-4b49-88c7-cfa52b3b0414"
+                  Id="698550d6-0567-4502-b957-af239e07701c"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a99d8231-eb54-4aa8-81ca-dc3b9edfff4c"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3f1dd5a0-54c6-46d3-ace7-a9d267dc0783"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -4515,7 +4754,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="1b0f1d5c-5a71-4cfe-83ba-96bac536a81f"
+                  Id="beee1553-858b-470e-b8a7-395edba27dcb"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -4649,35 +4888,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b5214207-408a-409d-bc27-170729455cb0"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="bb53aecc-77c3-4964-b251-12732cf7068d"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="d0251d07-9aa5-45d1-afe3-9240f6a06e2d"
+                  Id="326fab26-6796-4cd3-a87f-5184128ed1d0"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -4691,7 +4902,35 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="7a2e7dcd-76e9-4645-bac6-5dd43a5ff972"
+                  Id="631a3981-9265-4c48-8f96-cdab37e0060e"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7e6cc5de-d957-4a35-a338-030e2117e283"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b071f619-9f55-4e50-ac85-10c5ef625a24"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -4705,7 +4944,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e0d45fbb-18be-46d3-9ca8-1d210f6ee204"
+                  Id="cdcf059e-e8f9-4f8d-982e-6d08d0078591"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -4839,35 +5078,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="934615f9-ff2f-49b0-9ab7-b604498b8c19"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="6597a8b3-ddbf-4eca-ad56-0685814a3cc3"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9b99fbcd-6093-4e42-b3ef-a387e8d003f4"
+                  Id="f85d2eaa-f208-4f3e-b466-b03297a29073"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -4881,7 +5092,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="44639dc0-679c-4426-8053-1155784f3d02"
+                  Id="0de62c70-985c-4f59-860a-2c5faadb7919"
                   name="filterB"
                   direction="In"
                   isUnique="false">
@@ -4895,7 +5106,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="ea796a37-5b3a-40cf-adf4-ec3281679007"
+                  Id="1ab33ab6-55ad-45aa-a9ad-7c96850636f9"
                   name="withParentsServices"
                   direction="In"
                   isUnique="false">
@@ -4909,7 +5120,35 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="5dc23a2a-8187-4c13-aad4-e332c38f955b"
+                  Id="3d317d34-4a6b-4445-8481-cae70445e4af"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4b2f0558-076b-4373-81d1-938db8c165f5"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9acf5aba-c8e5-42f2-ae33-c887278d3f6a"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -4923,7 +5162,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="e3ddf0e8-45b2-4e8c-b5b5-c98e7b3537a1"
+                  Id="54c61da5-c378-4e92-8ea6-5ae0e115b00e"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -5062,35 +5301,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="30aa4783-7e0f-4b98-887f-cc593f58a58b"
-                  name="sorting"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="68dffba7-f819-4e6b-bd6f-ed069ebf9f7c"
-                  name="AskOrDesk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="c2dc954a-6b95-46c4-bcd0-05ffecaf7aec"
+                  Id="c0083188-5c9d-4afb-9333-5e7824ae2afd"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -5104,21 +5315,35 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="bec54559-7876-45e8-89ab-69f848c45ca2"
-                  name="filterB"
+                  Id="94e80860-98ac-42ad-9a8f-cb54d8219a39"
+                  name="sorting"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
-                    <classMoniker
-                      Id="28ff5777-9945-4014-a473-a590892f0d02"
-                      LastKnownName="Workshop"
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
                       LastKnownLocation="CompServiceClassDiagram.uml" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="7c393b1a-20d6-4e01-b841-168584ee56c4"
+                  Id="335e999a-070f-4bab-af74-c00f16de416d"
+                  name="AskOrDesk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b7691a97-53d7-45e8-ab1f-4a59e1f43cd1"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -5132,46 +5357,8 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="7647755d-69a1-43b8-ba27-07608e3f1197"
+                  Id="b5a02648-8656-40bf-81e8-def58f14458f"
                   name="page"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
-                      LastKnownName="int"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="c4a27e35-1e69-4c5c-a9be-2e7d5c105284"
-            name="GetMostLoaded"
-            isLeaf="false"
-            isStatic="true"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="4ad197c0-54b7-4648-b54c-0f7aa11d22a3"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="54b607b9-2cca-4a6e-89bf-a9c26e342fbd"
-                      LastKnownName="List&lt;Workshop&gt;"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0419643a-5c9e-4c77-b967-63025678deca"
-                  name="count"
                   direction="In"
                   isUnique="false">
                   <type_NamedElement>
@@ -5261,7 +5448,7 @@
             name="Waiting for repairing" />
           <enumerationLiteral
             Id="5c761be1-8320-4aa7-a0c5-0568285ebe9f"
-            name="Waiting for client answer" />
+            name="Waiting for answer" />
           <enumerationLiteral
             Id="bce1cc70-a749-4d9d-8bb6-b78332176b7d"
             name="Waiting for prepayment" />
@@ -5329,6 +5516,60 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="459444b5-5d22-4bf9-8269-844599bfd84b"
+            isDerived="false"
+            sourceEndRoleName="WorkshopTimetable"
+            targetEndRoleName="Workshop"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="28ff5777-9945-4014-a473-a590892f0d02"
+              LastKnownName="Workshop"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6be61f3d-fda5-445c-a843-12417a066c64"
+                  name="WorkshopTimetable"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b692dce4-f302-47cc-8ca4-544c01ca95c7"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="600b2f50-7f9d-41d6-ae14-123a40fdbad5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efa0e909-6e61-479d-93d3-e179a531c393"
+                  name="Workshop"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="25d1f2eb-65e4-4009-b19b-d67c5d924fe7"
@@ -5564,6 +5805,60 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="935d66df-2541-4131-8cd3-3772dad4e8a2"
+            isDerived="false"
+            sourceEndRoleName="EmplyeeTimetable"
+            targetEndRoleName="Employee "
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c5d92fcc-6b41-4682-ad1f-59437eebe00d"
+              LastKnownName="Employee {abstract}"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="54ee3ac9-fad3-4c73-84e4-311f4f00fa3f"
+                  name="EmplyeeTimetable"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4c948922-08f6-4b92-8605-f1830df3e5fb"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2ed51318-0d05-41a0-b0ac-8173ef558472"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b13720f-b177-48ba-b31e-572fdbef7a96"
+                  name="Employee "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="04f453db-bc49-4243-89d0-c7c90a8cc0bc"
@@ -6045,60 +6340,6 @@
               LastKnownLocation="CompServiceClassDiagram.uml" />
           </generalization>
         </generalsInternal>
-        <targetEnds>
-          <association
-            Id="6bf39730-cf86-4994-842c-65315469b17a"
-            isDerived="false"
-            sourceEndRoleName="OrderAtHome"
-            targetEndRoleName="Visit"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="9993dc90-d853-4bfa-aa0b-1ad4db065e73"
-              LastKnownName="Visit"
-              LastKnownLocation="CompServiceClassDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="8d4c954a-7625-4c16-8153-1265fc290c85"
-                  name="OrderAtHome"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="688940c2-f378-48ad-a2a7-8d9113e1e84e"
-                  name="Visit"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="155c38b5-8d33-4db1-b6fd-a494a7e5f9f4"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="a403985b-ea40-424a-9662-dab3a95748f2"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="e23154ce-2d22-46f2-baad-c8c510adaa13"
@@ -6297,35 +6538,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="f331b63d-45d2-4908-bcb4-b0ef2edb72c9"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="f2b7cb04-e8bc-4506-994a-328919637701"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="41f04165-d4e8-43a7-87cd-db94356e3c2e"
+                  Id="9a7c9314-00de-4a27-88c9-ab6c7d67a9c7"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -6339,7 +6552,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b130b62e-17b0-4dc9-8fab-5dde3d37c3c7"
+                  Id="838dc64b-d8dc-4070-9200-8353d2c8e909"
                   name="filterB"
                   direction="In"
                   isUnique="false">
@@ -6353,7 +6566,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="fb399032-b8b7-4c13-8bea-4c750987d48a"
+                  Id="ea3d1013-6cd8-4e5e-91da-78b404239f79"
                   name="client"
                   direction="In"
                   isUnique="false">
@@ -6367,7 +6580,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="8235b4d4-14bf-4f78-998c-329e758e711b"
+                  Id="1fe1c1d9-5a98-423f-ba4b-4784c5a2e7fa"
                   name="activeOnly"
                   direction="In"
                   isUnique="false">
@@ -6381,7 +6594,35 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="77a70203-2563-4a09-b994-5e0fe992e5c9"
+                  Id="ccefaf0c-a783-4312-be72-f683e3dfe124"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="260915ee-ce0a-46e1-9422-2a968ed62f48"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="33e4d7f4-255d-4287-96af-bff6cf46a724"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -6395,7 +6636,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="670f4a28-0212-42f6-b255-87237eedd202"
+                  Id="033e449f-1e86-40d1-aaf3-b90566fbf644"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -6544,35 +6785,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="cea4fbf0-5e27-440c-ba43-c97ff3c64625"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="d44d7def-3b96-4f00-ac66-b76af834e49a"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9946c1bc-1d6d-4352-b7af-c751ad61fa4f"
+                  Id="69fa28fb-73de-47f4-afee-0188f0e73382"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -6586,7 +6799,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="76fbba87-7f41-4c4f-ac54-443d485b621b"
+                  Id="0cb22f08-dac2-4546-a342-cb19a74917d5"
                   name="filterB"
                   direction="In"
                   isUnique="false">
@@ -6600,7 +6813,35 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="fbd19eab-6f65-4768-85dd-8b2467ebe4d0"
+                  Id="ef5454af-2376-4c2a-97e8-47fe5692af52"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8b70f81b-1695-480c-b543-392b07875ebf"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8346ae5b-e224-4d8d-8962-a883668eb08c"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -6614,7 +6855,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="9e17b6b8-7bcb-48da-925f-21a51d85f047"
+                  Id="996fdb7a-327c-4901-84d6-3109a216b948"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -6748,35 +6989,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="ed77f80d-af04-424d-bd4d-04701f8c3d63"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="613b8880-ceab-45bc-820b-5f1534a2de5f"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0e9b41b3-cbad-496d-b6a5-879637f7488d"
+                  Id="25752116-9c81-41e2-afe7-551ae3590a06"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -6790,7 +7003,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="d85df861-fde7-4fca-b9ab-7bc591f3a1ae"
+                  Id="5581ab6a-0507-4941-a91d-adbf99fa0e2c"
                   name="filterB"
                   direction="In"
                   isUnique="false">
@@ -6804,7 +7017,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="17b7e260-0137-4f44-b9bd-c2e7904e2b6d"
+                  Id="9f6a7cd0-3b9c-49d5-850a-3e733fd95f9c"
                   name="client"
                   direction="In"
                   isUnique="false">
@@ -6818,7 +7031,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="1cb4dc29-57ce-4de8-9c1f-a9dda8144fa6"
+                  Id="76d39ffd-ff12-4d3b-948a-3778fdc4df8d"
                   name="activeOnly"
                   direction="In"
                   isUnique="false">
@@ -6832,7 +7045,35 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="544a7c79-f872-437b-813d-65c5185ae369"
+                  Id="00e3f5fb-084e-4dd5-8759-f1398a1e746b"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ac30b99f-7c3d-46d7-b0e3-c9c2da8ee39f"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f5dcdd23-3276-4027-989a-c50e52bbaea1"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -6846,7 +7087,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="1e183272-6090-4b6f-be1e-4271f717a7c2"
+                  Id="8634bb21-d7c1-45a8-a6a8-160c0dd7de03"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -7385,11 +7626,63 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="3d9436de-568e-4ecf-8ba1-0093a26e1af1"
+            isDerived="false"
+            sourceEndRoleName="OrderSparePart"
+            targetEndRoleName="Order"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4256f795-28db-49f0-8022-8f48d9c63bbe"
+              LastKnownName="Order"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3b6f534-e934-4b3f-b8b9-907c91864220"
+                  name="OrderSparePart"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9a0fb92c-a931-406a-9ecd-514680783a17"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cdb51f97-1560-4a34-8190-941ea54f84e5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f9e4ac0-0771-4312-a533-a8c5acdec887"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="2ae82373-478a-4aa3-86ea-06fcacf2f69a"
-            name="PartDescription"
+            name="SparePart"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -7427,7 +7720,7 @@
         <ownedOperationsInternal>
           <operation
             Id="36a8da65-a614-494e-af93-8549aeae956b"
-            name="CalcFinalPrice"
+            name="CalcPrice"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -7690,6 +7983,92 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="8354f603-c0ec-4922-ba83-8c1199c17e38"
+            name="CalcBatcPrice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8f677a97-af6f-4241-b7fb-f8e266da20ed"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bb3d1d49-bf88-4270-b5ad-3f1901f7c1e5"
+                      LastKnownName="decimal"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="87165c79-179a-4526-b8b7-d2fc4f10f786"
+            name="CheckBatch"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="84af1559-674c-47b7-8929-a1f6608a8452"
+                  name="batch"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1459b137-3ab1-49cb-b736-a72c4b00e2c5"
+                      LastKnownName="Batch"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0cbbb59c-1b88-4fff-a322-a7a60b943906"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="54083d00-b7aa-423e-a80e-a5e157576e25"
+            name="DelSparePart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="36d3a1ea-16a3-41cd-891a-1332d1ed7fc6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -7702,7 +8081,7 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="8a7d1e90-d912-478e-baa0-7ff3bb67c28f"
+            Id="c68688ec-14d0-402c-9541-abd3a3e4e203"
             isDerived="false"
             sourceEndRoleName="Role"
             targetEndRoleName="Permission"
@@ -7715,25 +8094,25 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="b5e1cc4a-760d-4327-85fe-c6c4d8502f04"
+                  Id="4e2eb8b4-a641-4a82-91e3-c5d3230b5597"
                   name="Role"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="dbeb03e3-66e6-4d3c-8896-eaeb8fc7b549"
+                      Id="7370a815-5401-4067-8b9c-5afe5dd6fa82"
                       name="Lower"
                       value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="bb745e76-eb26-42ad-8f27-7e636b793a4e"
+                      Id="1b91820e-8ba0-43e5-b449-5cbf6addd63a"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -7741,7 +8120,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="ca8e5680-020f-4c39-bbf9-426d123591dd"
+                  Id="9834e8e1-f6d6-4ea4-acc6-79e8c2cb085e"
                   name="Permission"
                   isLeaf="false"
                   isStatic="false"
@@ -7749,20 +8128,7 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="d42f5493-511b-4757-92ba-f06b063879d3"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="e410b188-0fd6-4dda-8e59-4a0640091b70"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
+                  isComposite="false" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -7848,6 +8214,192 @@
                     <undefinedTypeMoniker
                       Id="96d274f9-94d3-40c5-bc6d-9f61b50251a3"
                       LastKnownName="void"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6a04cbae-791a-454f-ae70-32513bb9c3fb"
+            name="AddRole"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="51dc9969-5aee-4816-86d1-5beb6993714f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7bd7ca7f-78a3-4a0a-8449-6f53adc7b954"
+            name="DelRole"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4a5a219b-bb76-448d-a077-433c3062745d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c5cea7bf-df2c-42dc-b04b-17e18a483da7"
+            name="EditRole"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="578c91f2-f980-4fe0-9a13-0b21617c5f2b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="230d1321-3791-41b4-9666-4aaba71677f3"
+            name="AddPermission"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7a288812-1f8b-4681-b4d0-26b533bd2677"
+                  name="permission"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0b93d8d6-c2f6-4ae8-b2f0-289a8424fe88"
+                      LastKnownName="Permission"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="91cbb62a-f066-4110-9d19-92c6cb5088c2"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2cc801ca-79b6-48b4-9a29-c056480f59cb"
+            name="DelPermission"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="22b35a8f-6bdf-4071-ade0-cfcd871a5a4b"
+                  name="permission"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0b93d8d6-c2f6-4ae8-b2f0-289a8424fe88"
+                      LastKnownName="Permission"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1d44459c-03fb-4582-9210-35c1dc61af8d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="97c4ab0d-5d94-4004-a701-1ba5e5b9c722"
+            name="CheckPermission"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="82882b7c-aa28-4345-b261-f4a21f2376e7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f670e9fc-1d1b-40a7-bbbf-7347f9122d9e"
+                  name="permission"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0b93d8d6-c2f6-4ae8-b2f0-289a8424fe88"
+                      LastKnownName="Permission"
                       LastKnownLocation="CompServiceClassDiagram.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -7967,7 +8519,7 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="c6007af9-d1d3-42a6-afc6-d243416a7134"
+            Id="a883a815-497e-4bd1-b21d-0c84ff2a19b9"
             isDerived="false"
             sourceEndRoleName="Batch"
             targetEndRoleName="SparePart"
@@ -7980,25 +8532,25 @@
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="18386d07-60c4-4143-814b-f3f2f477a78b"
+                  Id="5677eb77-405e-4f93-a4b0-7d17c84fbeee"
                   name="Batch"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Composite"
+                  aggregation="Shared"
                   isComposite="false"
                   isNavigableOwned="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="0d4b46b2-18ea-4281-bf67-3d90dcafe38e"
+                      Id="2e41b51d-52c5-479c-b547-698e7fc64d8e"
                       name="Lower"
                       value="0" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="01a20b5c-7431-41ec-924d-d6057b71a611"
+                      Id="5357fb9d-6fd1-4f70-9ce1-7552a8091162"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -8006,7 +8558,7 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="93a679f5-d099-4962-b1f8-3141d10ecae7"
+                  Id="aa689fcb-2946-4f13-a669-8df70053e61e"
                   name="SparePart"
                   isLeaf="false"
                   isStatic="false"
@@ -8014,68 +8566,16 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="true">
+                  isComposite="false">
                   <lowerValueInternal>
                     <literalString
-                      Id="2e2c36b4-117e-4077-9fe6-ff106dcc7c1d"
+                      Id="c3b233ae-dbea-43e6-b28d-3ada214d068a"
                       name="Lower"
                       value="1" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
-                      Id="ccdcf01d-7cf3-4e11-8b9e-ea0986c03d61"
-                      name="Upper"
-                      value="*" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="7552c15b-48ac-4d70-9a0d-9fb6f7604294"
-            isDerived="false"
-            sourceEndRoleName="Batch"
-            targetEndRoleName="BatchSpareParts"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="bac14618-2f28-48e1-927a-8fb3423bec94"
-              LastKnownName="BatchSparePart"
-              LastKnownLocation="CompServiceClassDiagram.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="52ef5360-1238-4f88-9fad-329f18ad0bb1"
-                  name="Batch"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="9b5151be-fe45-4211-9df9-61f5c8ebd50f"
-                  name="BatchSpareParts"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="8f388b94-29db-4e26-98d7-cf7b0a9679a4"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="b6096166-ded2-4c1f-9825-729380974c7a"
+                      Id="623c9775-407a-4b6d-ba15-251117b61093"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -8315,10 +8815,17 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="83489170-b39a-4c0e-b1c4-78353eacccee"
-                  name="SparePart"
+                  Id="c5d8f585-68e7-4415-a169-ea5dea198c5c"
+                  name="sparePart"
                   direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3113cd22-0eb7-43e8-bafb-033a4008083a"
+                      LastKnownName="SparePart"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -8340,30 +8847,6 @@
                     <undefinedTypeMoniker
                       Id="4dc11e33-1bec-4061-b2b1-4e6f90f82db7"
                       LastKnownName="List&lt;BatchSpareParts&gt;"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="dde753d3-284c-4ece-920d-ee577e80fadb"
-            name="EditSpareParts"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="4e8e85d6-3901-4fde-bb29-6392a84aa6bd"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
                       LastKnownLocation="CompServiceClassDiagram.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -8496,6 +8979,82 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="b9846d72-9365-47a2-9796-84d6f813abe4"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="97146825-bc01-46c1-b52d-be944d7b6961"
+            name="GetSparePart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="da369ddf-9f66-458a-9e3c-12e6c4d3f064"
+                  name="id"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cf030b22-1a53-44a5-a3a0-d5e9733e9daa"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="bac14618-2f28-48e1-927a-8fb3423bec94"
+                      LastKnownName="BatchSparePart"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8cac6be2-ef4c-41df-8a65-01160a23524d"
+            name="CheckSparePart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2788f0a1-c59e-4b40-847d-13c8da679724"
+                  name="sparePart"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3113cd22-0eb7-43e8-bafb-033a4008083a"
+                      LastKnownName="SparePart"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="afc30e31-1b9f-46dd-9d24-bd1086e8ad3e"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -8753,6 +9312,54 @@
               <operationHasOwnedParameters>
                 <parameter
                   Id="e2fed4e4-2a76-4a56-a4f3-2e15b2577f34"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ba3deaf2-9fa1-4bbe-a0fd-f1233eee5378"
+            name="GetCountInStock"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c8436a8-8470-4eee-b7cf-079f681fbb00"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cda7fadb-33d8-454c-9de2-dd67c9748ee7"
+            name="GetCountInTransit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8066f667-a11d-4c41-a879-07ee7df3e57e"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -9169,35 +9776,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="849ec184-4e55-4fab-9163-c9a8ac1d3ef6"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="9fa7df65-0ab6-41f7-95d3-171083f0f00c"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="0a1cdfd8-088d-4860-80b6-db1c94c56c5d"
+                  Id="bc09e2dd-3d33-4fab-9365-47a0e6126a7a"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -9211,7 +9790,49 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="dd732134-ae2a-42b5-a7cd-ba08d67e0a7a"
+                  Id="8ad13f4f-f38b-447f-8f12-9fc4bb6e94b8"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4ebf081f-1f8f-4ecd-98e8-734f01a1d940"
+                  name="employee"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="252db873-c497-4486-9a3e-93ac38242a9c"
+                      LastKnownName="Employee"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9418ca7-76b7-4d18-be1d-48024689e8d4"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dcff6d33-ec03-4417-ae31-9a10d50f55b1"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -9225,7 +9846,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="c461fdb7-dae5-4492-b094-5cf6ee04c924"
+                  Id="2e1f7da1-301d-4845-92a3-f6f214a0f0e3"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -9452,6 +10073,60 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="333fd19e-4fd3-4797-96c8-cacf8db390b8"
+            isDerived="false"
+            sourceEndRoleName="Visit"
+            targetEndRoleName="OrderAtHome"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="af7cf834-9864-4840-bb0a-f81bf9a2d0b7"
+              LastKnownName="OrderAtHome"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5bd8f9cf-6b41-440b-b1fa-78589b38dc58"
+                  name="Visit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dbbc7e81-f1af-410c-90dc-1dc94616b2ac"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="85fc4a8f-a152-4076-b073-0660e3eea1db"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab000c32-afac-4e07-b093-ad95e81d42f6"
+                  name="OrderAtHome"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="bc5776f6-9341-4938-a4e4-3d14e57e4d23"
@@ -9473,7 +10148,7 @@
           </property>
           <property
             Id="89d90fda-6851-408e-8576-7f9bf492bdae"
-            name="VisitDate"
+            name="DateVisit"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -9684,30 +10359,6 @@
             </ownedParameters>
           </operation>
           <operation
-            Id="ce622c18-b8c1-4a50-b255-3bec84918753"
-            name="GetVisitServices"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="4768401b-5c5c-4c87-a89e-1b0777ba8bb2"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="f2524612-3ce9-4c06-995c-fc4329fcd653"
-                      LastKnownName="List&lt;OrderService&gt;"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
             Id="42bf5465-2ffe-479a-bd77-554eec86a340"
             name="AddService"
             isLeaf="false"
@@ -9821,6 +10472,30 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="1c90e31c-cb90-4110-96fa-934196c5434d"
+            name="GetVisitOrderServices"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4a66ced2-3b1e-4fb3-b056-8dbc36ba309a"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f2524612-3ce9-4c06-995c-fc4329fcd653"
+                      LastKnownName="List&lt;OrderService&gt;"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -9902,35 +10577,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="ed30fe39-89ad-463a-8a6a-a5ef8decdfba"
-                  name="sortBy"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
-                      LastKnownName="string"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="e21a48ae-a64d-4ece-a305-61f1c989f7ec"
-                  name="desk"
-                  direction="In"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="fb1f9532-d810-44d1-bcc3-41fb4c9129df"
+                  Id="82b12be7-8775-40e0-8817-73e22a1748b9"
                   name="filterA"
                   direction="In"
                   isUnique="false">
@@ -9944,7 +10591,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="0451cdad-c72d-4468-af76-2405b3542bc7"
+                  Id="c912f9f2-dc45-4dec-912a-e6068a4ae890"
                   name="filterB"
                   direction="In"
                   isUnique="false">
@@ -9958,7 +10605,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="1dc43447-f350-4e87-a971-0d6edd6956b1"
+                  Id="2d05b7c5-0081-4e99-a1e6-7ba8681082c1"
                   name="master"
                   direction="In"
                   isUnique="false">
@@ -9972,7 +10619,35 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="33a22d80-71d0-43c6-abf2-b0bda20e7b46"
+                  Id="0c4ff056-8aa8-4acd-94b0-a347ba8577b4"
+                  name="sortBy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="74cafbae-7254-4f6c-9322-6709f1fee30e"
+                      LastKnownName="string"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1343b019-365d-4c3f-b81f-ab25744d7565"
+                  name="desk"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c414db32-8f1e-47c0-83ce-093ecb6afe4d"
                   name="count"
                   direction="In"
                   isUnique="false">
@@ -9986,7 +10661,7 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="141dfddb-571c-4fdf-a102-fdf9366cfbcd"
+                  Id="6e72e405-e335-4bfe-9dfd-29d28a5876f6"
                   name="page"
                   direction="In"
                   isUnique="false">
@@ -10151,6 +10826,24 @@
               <classMoniker
                 Id="4256f795-28db-49f0-8022-8f48d9c63bbe"
                 LastKnownName="Order"
+                LastKnownLocation="CompServiceClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fb08cc68-a2b4-4fd6-b182-d2df508651ab"
+            name="Employee"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="252db873-c497-4486-9a3e-93ac38242a9c"
+                LastKnownName="Employee"
                 LastKnownLocation="CompServiceClassDiagram.uml" />
             </type_NamedElement>
           </property>
@@ -10321,11 +11014,63 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="c71234b6-6f5f-4846-8d18-c9c29681a3b9"
+            isDerived="false"
+            sourceEndRoleName="BatchSparePart"
+            targetEndRoleName="Batch"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1459b137-3ab1-49cb-b736-a72c4b00e2c5"
+              LastKnownName="Batch"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="873d2376-9084-4285-8f52-5a408f04bda4"
+                  name="BatchSparePart"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9602a7d6-7b2b-4103-a184-3e58e9bdfbb0"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3da9cdbd-fe51-440b-abe4-dbdd870e571a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b528da5-6372-461d-8d42-f3a9c21c676d"
+                  name="Batch"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="159a1aa1-c012-4a39-a10d-c858c2e8d20b"
-            name="PartDescription"
+            name="SparePart"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -10425,78 +11170,6 @@
                   name="Batch"
                   direction="In"
                   isUnique="false" />
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="29a1d4f7-fa12-4031-8f27-f57a7912efbe"
-            name="AddBatchSparePart"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="a61e12e9-4a9f-4143-bea2-ae2422981e70"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="aa53484b-116f-40c9-b720-00bfcee50e7f"
-            name="DelBatchSparePart"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="09ca10bc-823a-456d-92d5-86aa68daca61"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="5da9a08c-5d91-499f-a4d7-dee1653be26e"
-            name="EditBatchSparePart"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="ee12df51-cf71-4719-a58e-bc421ccff71e"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <undefinedTypeMoniker
-                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
-                      LastKnownName="bool"
-                      LastKnownLocation="CompServiceClassDiagram.uml" />
-                  </type_NamedElement>
-                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -10698,6 +11371,24 @@
                 LastKnownLocation="CompServiceClassDiagram.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="cffe51ce-1d44-42c6-aa5f-8a57fa342ed5"
+            name="Price"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="bb3d1d49-bf88-4270-b5ad-3f1901f7c1e5"
+                LastKnownName="decimal"
+                LastKnownLocation="CompServiceClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -10724,6 +11415,30 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="12ccc623-1561-432b-888c-21219013f9a6"
+            name="CalcFullPrice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="48e9930f-0a73-42bf-8f0c-c2bcae591fe1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bb3d1d49-bf88-4270-b5ad-3f1901f7c1e5"
+                      LastKnownName="decimal"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -10741,6 +11456,72 @@
       <undefinedType
         Id="f2524612-3ce9-4c06-995c-fc4329fcd653"
         name="List&lt;OrderService&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="52b0dd5e-950e-4413-96fd-4804b4959a2a"
+        name="RoleType"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="939612a7-4712-422e-801e-b395b17ab47f">
+            <classMoniker
+              Id="ab5e581b-fa61-4760-88a4-e6ea3211963d"
+              LastKnownName="Role"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="83572e90-f3c0-466e-827a-a0630214dd96"
+            name="Master" />
+          <enumerationLiteral
+            Id="5be76005-cb39-4b03-b89b-247fab7bbec7"
+            name="Manager" />
+          <enumerationLiteral
+            Id="a7ed2b11-16f6-4f66-8b5a-34b4198a466e"
+            name="Anyone" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="42896087-0971-43c1-982b-06af3ffb8565"
+        name="Datetime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="66450f1d-d499-4f46-8aa5-5a82ae1b7156"
+        name="OrderSer" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="14186085-41a4-40c7-93b6-549a47c7d21d"
+        name="BatchStatus"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="b9c60055-2573-40b9-9110-822d20958af6">
+            <classMoniker
+              Id="1459b137-3ab1-49cb-b736-a72c4b00e2c5"
+              LastKnownName="Batch"
+              LastKnownLocation="CompServiceClassDiagram.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="3a6d56fa-6ec9-45c8-8f36-62669142919e"
+            name="Created" />
+          <enumerationLiteral
+            Id="bb2ed705-71b7-4b4d-befd-039eeb2a0346"
+            name="Delivered" />
+          <enumerationLiteral
+            Id="ff3c8573-85b9-4da9-8fc1-e8c6cad397e1"
+            name="Confirmed" />
+        </ownedLiterals>
+      </enumeration>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

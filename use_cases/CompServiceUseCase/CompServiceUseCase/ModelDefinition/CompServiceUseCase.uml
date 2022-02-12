@@ -947,6 +947,13 @@
               LastKnownName="Просмотр списка деталей"
               LastKnownLocation="CompServiceUseCase.uml" />
           </include>
+          <include
+            Id="83493a6d-1fd3-4fc0-9c5d-bc6f717b8f6e">
+            <useCaseMoniker
+              Id="c73bae21-c959-4e40-877c-e4409b7a1a18"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
         </additions>
       </useCase>
     </packageHasNamedElement>
@@ -1140,6 +1147,13 @@
             <useCaseMoniker
               Id="5a1c1106-97f7-4f17-b408-f8bdda709e01"
               LastKnownName="Просмотр списка категорий "
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="367c413c-c461-4337-9c43-bbb4b5d911ad">
+            <useCaseMoniker
+              Id="4bd229f7-99fc-4ac2-9681-86564739d321"
+              LastKnownName="Просмотр списка клиентов"
               LastKnownLocation="CompServiceUseCase.uml" />
           </include>
         </additions>
@@ -1362,6 +1376,50 @@
               LastKnownLocation="CompServiceUseCase.uml" />
           </extend>
         </extendedCases>
+        <additions>
+          <include
+            Id="9f3a6b9f-07b8-4053-b467-55bfa86e9587">
+            <useCaseMoniker
+              Id="4bd229f7-99fc-4ac2-9681-86564739d321"
+              LastKnownName="Просмотр списка клиентов"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="b5617bef-6550-4e7c-8f00-0baf52e10bb5">
+            <useCaseMoniker
+              Id="c73bae21-c959-4e40-877c-e4409b7a1a18"
+              LastKnownName="Просмотр списка мастерских"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="e7c81c0b-f343-4929-a758-e69f04587e67">
+            <useCaseMoniker
+              Id="4bce850c-e496-4f16-a933-c5588d1b5898"
+              LastKnownName="Просмотр списка сотрудников"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="00858b19-a4db-434a-a4bb-d40faecb8048">
+            <useCaseMoniker
+              Id="5afbcba9-dae9-4844-ae54-b5ee0882ff0c"
+              LastKnownName="Просмотр списка техники"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="8bd5caaf-201f-40b8-85c4-19126199ee89">
+            <useCaseMoniker
+              Id="52acb191-e134-47d0-9064-3fb7fe5f3a14"
+              LastKnownName="Просмотр списка услуг"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+          <include
+            Id="e832cc83-3f14-4684-a745-d7bc01a35285">
+            <useCaseMoniker
+              Id="7d97eca2-fad1-40bc-a43b-d0c6265cd572"
+              LastKnownName="Просмотр списка деталей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1421,7 +1479,7 @@
     <packageHasNamedElement>
       <useCase
         Id="db36ad59-fcee-4322-9f9d-13f155faa352"
-        name="Удаление (отмена) заказа"
+        name="Отмена заказа"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -1593,23 +1651,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
-        Id="12b9c7bc-a4aa-4a89-8087-2731f5b1043b"
-        name="Добавить новый заказ"
-        isAbstract="false"
-        isLeaf="false">
-        <extendedCases>
-          <extend
-            Id="779123a8-9ec3-4c70-94d8-9d98a88481ac">
-            <useCaseMoniker
-              Id="44dbacbb-6313-4d14-b544-920358a45958"
-              LastKnownName="Просмотр конкретного клиента"
-              LastKnownLocation="CompServiceUseCase.uml" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase
         Id="b9792451-87be-4880-86ae-627c1f6ea6c3"
         name="Просмотр списка заказов клиента"
         isAbstract="false"
@@ -1689,7 +1730,7 @@
     <packageHasNamedElement>
       <useCase
         Id="f7503cd5-7786-4f74-8bc9-def8c474a896"
-        name="Добавить менеджера"
+        name="Добавление менеджера"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -1942,6 +1983,15 @@
               LastKnownLocation="CompServiceUseCase.uml" />
           </extend>
         </extendedCases>
+        <additions>
+          <include
+            Id="af697c09-3efd-48a5-aa74-54b4eab0eacb">
+            <useCaseMoniker
+              Id="7d97eca2-fad1-40bc-a43b-d0c6265cd572"
+              LastKnownName="Просмотр списка деталей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </include>
+        </additions>
       </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2038,32 +2088,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
-        Id="ec38451c-526b-4616-9025-443c466fe6fc"
-        name="Заказ деталей этого типа"
-        isAbstract="false"
-        isLeaf="false">
-        <extendedCases>
-          <extend
-            Id="598dd15b-f18a-46be-a9cf-33531d9faa47">
-            <useCaseMoniker
-              Id="39d9f874-f6f3-480c-ad32-67e32a1cb44c"
-              LastKnownName="Просмотр конкретной детали"
-              LastKnownLocation="CompServiceUseCase.uml" />
-          </extend>
-        </extendedCases>
-        <additions>
-          <include
-            Id="5cca6837-0a11-4150-a97b-c49693269ceb">
-            <useCaseMoniker
-              Id="476984c5-5521-4b4d-affa-b6ee7c0a324b"
-              LastKnownName="Добавление поставки"
-              LastKnownLocation="CompServiceUseCase.uml" />
-          </include>
-        </additions>
-      </useCase>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <useCase
         Id="00cc39ea-0d4f-40d4-8d45-a5c5a5772b6b"
         name="Просмотр списка мастерских"
         isAbstract="false"
@@ -2147,6 +2171,57 @@
         name="Просмотр списка мастерских"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5921867d-8843-4619-9674-2074b057222b"
+        name="Просмотр конкретной роли"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d1ae50ab-d236-42bf-bebf-be3bb1722527">
+            <useCaseMoniker
+              Id="5ff621dd-c61d-426b-b725-63c7d9ca5f2d"
+              LastKnownName="Просмотр списка ролей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="871fba6c-0cb8-4de1-bc6d-693fe6e2425e"
+        name="Удаление роли / Изменение роли"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="107f0397-f018-4db9-a942-b5cbe4de0296">
+            <useCaseMoniker
+              Id="5921867d-8843-4619-9674-2074b057222b"
+              LastKnownName="Просмотр конкретной роли"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4019464b-2132-4b94-8460-d81e66a0390b"
+        name="Добавление роли"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="ba28a563-6e9f-4379-b256-6df570d93942">
+            <useCaseMoniker
+              Id="5ff621dd-c61d-426b-b725-63c7d9ca5f2d"
+              LastKnownName="Просмотр списка ролей"
+              LastKnownLocation="CompServiceUseCase.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
