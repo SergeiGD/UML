@@ -17,12 +17,12 @@
 <hr>
 
 ## Диаграмма прецедентов
-![](./images/UseCases_TechServ_Sergei.png "Диаграмма прецедентов")
+![](./images/UseCase_TechServ_Sergei.png "Диаграмма прецедентов")
 
 <hr>
 
 ## Диаграмма классов
-![](./images/Classes_TechServ_Sergei.png "Диаграмма классов")
+![](./images/Class_TechServ_Sergei.png "Диаграмма классов")
 
 ### Список классов
  - Person - абстрактный класс, представляющий собой человека. От него наследуются Client и Employee
