@@ -477,7 +477,7 @@
           </operation>
           <operation
             Id="1c941171-0dc0-420b-8339-d8555d1e2f58"
-            name="AddMaster"
+            name="AddEmployee"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -501,7 +501,7 @@
           </operation>
           <operation
             Id="4b6ecb55-1c3c-4954-be9b-42ca06cad2fe"
-            name="EditMaster"
+            name="EditEmployee"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -525,7 +525,7 @@
           </operation>
           <operation
             Id="108163b1-a848-42d6-a760-42034cdd4212"
-            name="DelMaster"
+            name="DelEmployee"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -534,7 +534,7 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="5af83c23-f5ed-43bd-9542-41d2b51c0b6e"
+                  Id="cbdeb4f8-59d6-46cf-a42a-5c258112f9cc"
                   direction="Return"
                   isUnique="false">
                   <type_NamedElement>
@@ -920,6 +920,78 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="e3425e68-fdf7-4572-af44-740c6b372c7c"
+            name="AddEmployee"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="31e4782e-0f37-48fe-b8f1-91093f04b6fa"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2eacce2c-ff9a-44e0-940f-fe2e18184cd1"
+            name="DelEmployee"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="640fd557-cd21-409a-ad14-138372260ca6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7876d5ca-648d-47cc-a9e6-1ddb6cad0b5d"
+            name="EditEmployee"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fc5cb003-3dd6-47f5-85c7-6b3108b87feb"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="9b3d5d60-324b-4301-b8f5-3750227e268c"
+                      LastKnownName="bool"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -987,7 +1059,7 @@
           </operation>
           <operation
             Id="d069ec92-18e6-4ac5-a41a-8938d32aee1a"
-            name="AddManager"
+            name="AddEmployee"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1011,7 +1083,7 @@
           </operation>
           <operation
             Id="a0bf431f-f527-4a10-99c4-eb2610d6ee0e"
-            name="DelManager"
+            name="DelEmployee"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1035,7 +1107,7 @@
           </operation>
           <operation
             Id="3b22b3fd-ae87-4d5c-8626-8fcdf15c5191"
-            name="EditManager"
+            name="EditEmployee"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -7828,17 +7900,31 @@
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="74ef587a-c28a-4264-a14b-460256e217ef"
-                  name="Batch"
+                  Id="ec988f73-483d-41ed-a510-9305175e8535"
+                  name="batch"
                   direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1459b137-3ab1-49cb-b736-a72c4b00e2c5"
+                      LastKnownName="Batch"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b16b1dc3-4c55-4c14-bb5f-0eff7ecc0e88"
-                  name="Integer"
+                  Id="4629ffec-aaad-43d7-8b1e-0add4599ccf1"
+                  name="quantity"
                   direction="In"
-                  isUnique="false" />
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f984419c-cfc8-4466-a4ac-951b45074e3f"
+                      LastKnownName="int"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
@@ -7985,7 +8071,7 @@
           </operation>
           <operation
             Id="8354f603-c0ec-4922-ba83-8c1199c17e38"
-            name="CalcBatcPrice"
+            name="CalcInBatcPrice"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -8001,6 +8087,20 @@
                     <undefinedTypeMoniker
                       Id="bb3d1d49-bf88-4270-b5ad-3f1901f7c1e5"
                       LastKnownName="decimal"
+                      LastKnownLocation="CompServiceClassDiagram.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="06e81aa8-4f5c-4514-90e6-0f575081c017"
+                  name="batch"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1459b137-3ab1-49cb-b736-a72c4b00e2c5"
+                      LastKnownName="Batch"
                       LastKnownLocation="CompServiceClassDiagram.uml" />
                   </type_NamedElement>
                 </parameter>

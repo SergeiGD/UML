@@ -254,7 +254,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="bcb7240a-31d2-4058-afd3-aabd5102cef9" name="AddMaster" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="bcb7240a-31d2-4058-afd3-aabd5102cef9" name="AddEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="1c941171-0dc0-420b-8339-d8555d1e2f58" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -267,7 +267,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="85210de6-b78c-4f07-87b0-e9d3d183acca" name="EditMaster" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="85210de6-b78c-4f07-87b0-e9d3d183acca" name="EditEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="4b6ecb55-1c3c-4954-be9b-42ca06cad2fe" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -280,12 +280,12 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="4456736b-d96f-41eb-aa5e-9569d0097bee" name="DelMaster" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="4456736b-d96f-41eb-aa5e-9569d0097bee" name="DelEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="108163b1-a848-42d6-a760-42034cdd4212" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="59480b79-6d2d-4cbf-9e2f-c113bd7903a2" direction="Return" isUnique="false">
-                  <elementDefinition Id="5af83c23-f5ed-43bd-9542-41d2b51c0b6e" />
+                <parameter Id="55ba5296-f9a1-4084-9f29-2daa6e85a24c" direction="Return" isUnique="false">
+                  <elementDefinition Id="cbdeb4f8-59d6-46cf-a42a-5c258112f9cc" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
                   </type_NamedElement>
@@ -483,6 +483,45 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation Id="3189ac1e-1a72-47a8-9a8a-dba36ac7b3df" name="AddEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e3425e68-fdf7-4572-af44-740c6b372c7c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0ad10fcf-8117-48a4-9366-6894cfe15a2b" direction="Return" isUnique="false">
+                  <elementDefinition Id="31e4782e-0f37-48fe-b8f1-91093f04b6fa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4a3c9323-9f4c-4836-8988-a0453ad857f9" name="DelEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2eacce2c-ff9a-44e0-940f-fe2e18184cd1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cc91d966-db59-4688-8c23-43b01a5e66d4" direction="Return" isUnique="false">
+                  <elementDefinition Id="640fd557-cd21-409a-ad14-138372260ca6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a972b040-c4cd-4508-ab09-dfc350bff176" name="EditEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7876d5ca-648d-47cc-a9e6-1ddb6cad0b5d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="65c3179a-f8d0-4bc3-86e0-b972a49ec9bc" direction="Return" isUnique="false">
+                  <elementDefinition Id="fc5cb003-3dd6-47f5-85c7-6b3108b87feb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6a45fed8-1689-4fa9-8e39-f876365db554" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -517,7 +556,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="9c11cb6d-b1bf-4f37-b5e3-971e9c8853df" name="AddManager" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="9c11cb6d-b1bf-4f37-b5e3-971e9c8853df" name="AddEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="d069ec92-18e6-4ac5-a41a-8938d32aee1a" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -530,7 +569,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="3f2faa61-eed3-4084-a7e5-10f4d4f39291" name="DelManager" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="3f2faa61-eed3-4084-a7e5-10f4d4f39291" name="DelEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="a0bf431f-f527-4a10-99c4-eb2610d6ee0e" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -543,7 +582,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="fca7eb91-514b-4997-8ca3-940640b17aba" name="EditManager" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="fca7eb91-514b-4997-8ca3-940640b17aba" name="EditEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="3b22b3fd-ae87-4d5c-8626-8fcdf15c5191" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -4067,13 +4106,19 @@
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="559c7f39-a786-46e6-9765-0fd6b1d1b17a" name="Batch" direction="In" isUnique="false">
-                  <elementDefinition Id="74ef587a-c28a-4264-a14b-460256e217ef" />
+                <parameter Id="60110644-9890-4c41-b787-1b395da17b19" name="batch" direction="In" isUnique="false">
+                  <elementDefinition Id="ec988f73-483d-41ed-a510-9305175e8535" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a983ce7e-a30b-442b-8780-478ad8636aaf" LastKnownName="Batch" />
+                  </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="9c200a47-6c5d-417a-933f-5b10b788ff92" name="Integer" direction="In" isUnique="false">
-                  <elementDefinition Id="b16b1dc3-4c55-4c14-bb5f-0eff7ecc0e88" />
+                <parameter Id="ae19a03c-c2d0-47c5-98cc-a1b0b8f4ad91" name="quantity" direction="In" isUnique="false">
+                  <elementDefinition Id="4629ffec-aaad-43d7-8b1e-0add4599ccf1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de578a74-cb65-4d29-833c-4c0b903c29db" LastKnownName="int" />
+                  </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -4158,7 +4203,7 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="4cef2096-d532-486e-8548-9588de108ef1" name="CalcBatcPrice" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="4cef2096-d532-486e-8548-9588de108ef1" name="CalcInBatcPrice" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="8354f603-c0ec-4922-ba83-8c1199c17e38" />
             <ownedParameters>
               <operationHasOwnedParameters>
@@ -4166,6 +4211,14 @@
                   <elementDefinition Id="8f677a97-af6f-4241-b7fb-f8e266da20ed" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="d0e2218a-5be7-46cf-97a2-091e3a6a80e0" LastKnownName="decimal" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3289fdcf-4559-4bc4-839d-f4de40f32174" name="batch" direction="In" isUnique="false">
+                  <elementDefinition Id="06e81aa8-4f5c-4514-90e6-0f575081c017" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a983ce7e-a30b-442b-8780-478ad8636aaf" LastKnownName="Batch" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
