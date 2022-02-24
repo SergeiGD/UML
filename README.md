@@ -79,7 +79,7 @@
 ## API
 ### Внимание! Диаграммы представленные ниже не реализованы в самом проекте и просто показывают, как выглядело бы взаимодействие с системой, если бы велась разработка с помощью API.  
 ## Схема endpoint'ов
-![](./images/Endpoints_TechServ_Sergei.png Endpoint'ы")
+![](./images/Endpoints_TechServ_Sergei.png "Endpoint'ы")
 
 <hr>
 
